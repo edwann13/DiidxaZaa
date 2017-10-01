@@ -1,6 +1,7 @@
 
 <img src="https://travis-ci.org/edwann13/DiidxaZaa.svg?branch=master"/>
 <a href="https://codeclimate.com/github/edwann13/DiidxaZaa"><img src="https://codeclimate.com/github/edwann13/DiidxaZaa/badges/gpa.svg" /></a>
+<a href="https://codeclimate.com/github/rails/rails/coverage"><img src="https://codeclimate.com/github/rails/rails/badges/coverage.svg" /></a>
 # README
 
 This README would normally document whatever steps are necessary to get the
