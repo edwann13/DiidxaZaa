@@ -12,3 +12,10 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 193ms (Views: 9.8ms)
 
 
+Started GET "/" for ::1 at 2017-09-30 21:27:50 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/developer/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/developer/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 180ms (Views: 10.8ms)
+
+
