@@ -10,12 +10,12 @@
         %a.nav-link{:href => "#"} Study
 
 
-%div.container
-  %h1 Welcome!!!
-  %p checkout all of the words!!!
+
+%div.container.rounded
   - @list.each do |word|
-    %div.container.hello
-      %div.container.oneWordBox
+    %div.row
+      %div.col-md-2.hello1.top-buffer.roundLeft
         %p.hello1 #{word.word}
+      %div.col-md-10.hello2.top-buffer.roundRight
         %p.hello2 #{word.definition}
 
