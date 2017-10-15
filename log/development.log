@@ -2407,3 +2407,236 @@ Processing by WordsController#new as HTML
 Completed 200 OK in 298ms (Views: 286.5ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/" for ::1 at 2017-10-14 23:45:54 -0700
+  
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  
+activerecord (5.1.4) lib/active_record/connection_adapters/connection_specification.rb:188:in `rescue in spec'
+activerecord (5.1.4) lib/active_record/connection_adapters/connection_specification.rb:185:in `spec'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:880:in `establish_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:58:in `establish_connection'
+activerecord (5.1.4) lib/active_record/railtie.rb:124:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:49:in `each'
+activesupport (5.1.4) lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+activerecord (5.1.4) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.4) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.4) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.4) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for ::1 at 2017-10-14 23:50:01 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered words/new.html.haml within layouts/application (55.8ms)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 2.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `word' for #<#<Class:0x007fe02b60ec40>:0x007fe02b604128>):
+    16: /   - @list.each do |word|
+    17: /     %div.container.hello
+    18: /       %div.container.oneWordBox
+    19: /         %p.hello1 #{word.word}
+    20: /         %p.hello2 #{word.definition}
+    21: %div.container
+    22:   - @list.each do |word|
+  
+app/views/words/new.html.haml:19:in `_app_views_words_new_html_haml___2230825835226168534_70300388589480'
+Started GET "/" for ::1 at 2017-10-14 23:50:28 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (2.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 427ms (Views: 422.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:50:52 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (25.9ms)
+Completed 200 OK in 93ms (Views: 89.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:51:37 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (21.2ms)
+Completed 200 OK in 3859ms (Views: 3856.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:52:04 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (21.0ms)
+Completed 200 OK in 2583ms (Views: 2575.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:53:23 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (9.8ms)
+Completed 200 OK in 2576ms (Views: 2573.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:55:09 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 2605ms (Views: 2600.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:56:03 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 2314ms (Views: 2311.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:56:24 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 2318ms (Views: 2315.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:57:17 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 2638ms (Views: 2635.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:58:08 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 57ms (Views: 52.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:58:11 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:58:43 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 48ms (Views: 45.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:58:52 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:59:07 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:59:24 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-15 00:02:13 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 2713ms (Views: 2710.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-15 00:03:22 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (17.2ms)
+Completed 200 OK in 2453ms (Views: 2449.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-10-15 00:03:57 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 2643ms (Views: 2639.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-15 00:04:31 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.4ms)
+
+
