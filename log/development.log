@@ -19,3 +19,2391 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 180ms (Views: 10.8ms)
 
 
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWords (20171012062034)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "words" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "word" varchar, "definition" varchar, "category" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171012062034"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-12 06:22:22.035847"], ["updated_at", "2017-10-12 06:22:22.035847"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2017-10-11 23:23:17 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/developer/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/developer/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (5.4ms)
+Completed 200 OK in 26ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-11 23:23:20 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/developer/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/developer/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/word/new.html" for ::1 at 2017-10-11 23:23:29 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/word/new.html"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:23:42 -0700
+Processing by WordsController#new as HTML
+Completed 406 Not Acceptable in 48ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (WordsController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:25:42 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 1180ms (Views: 1171.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:35:57 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (32.8ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `list' for #<#<Class:0x007febd6fb58c8>:0x007febd6fd64b0>
+Did you mean?  list_of):
+    1: 
+    2: %strong= list
+  
+app/views/words/new.html.haml:2:in `_app_views_words_new_html_haml___3622916836866545422_70325450422080'
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:36:06 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 192ms (Views: 189.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:38:12 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %strong and nested within it.):
+    1: 
+    2: %strong @list.each do |word|
+    3: 	%p= word
+  
+app/views/words/new.html.haml:3
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:38:29 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %strong and nested within it.):
+    1: 
+    2: %strong @list.each do |word|
+    3:   %p= word
+  
+app/views/words/new.html.haml:3
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:38:40 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %strong and nested within it.):
+    1: 
+    2: %strong= @list.each do |word|
+    3:   %p= word
+  
+app/views/words/new.html.haml:3
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:38:52 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %p and nested within it.):
+    1: 
+    2: %p= @list.each do |word|
+    3:   %p= word
+  
+app/views/words/new.html.haml:3
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:38:58 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %p and nested within it.):
+    1: 
+    2: %p= @list.each do |word|
+    3:   = word
+  
+app/views/words/new.html.haml:3
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:39:04 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %p and nested within it.):
+    1: 
+    2: %p= @list.each do |word|
+    3:   =word
+  
+app/views/words/new.html.haml:3
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:39:10 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %p and nested within it.):
+    1: 
+    2: %p= @list.each do |word|
+    3:   word
+  
+app/views/words/new.html.haml:3
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:40:13 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: 
+    2: - @list.each do |word|
+    3: 	p= word
+  
+app/views/words/new.html.haml:2:in `_app_views_words_new_html_haml___3622916836866545422_70325481026320'
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:40:30 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: 
+    2: - @list.each do |word|
+    3: 	%p= word
+  
+app/views/words/new.html.haml:2:in `_app_views_words_new_html_haml___3622916836866545422_70325479558480'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (2.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "words"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "words" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "word" varchar, "definition" varchar, "category" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "words"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "words" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "word" varchar, "definition" varchar, "category" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171012062034)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-12 06:42:28.728398"], ["updated_at", "2017-10-12 06:42:28.728398"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:42:59 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid tag: "%	p= word".):
+    1: 
+    2: - @list.each do |word|
+    3: 	%	p= word
+  
+app/views/words/new.html.haml:3
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:43:09 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 200ms (Views: 197.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:43:23 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:43:47 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:43:55 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:44:11 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:44:32 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:45:43 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "brain"], ["definition", "an organ of soft nervous tissue contained in the skull of vertebrates, functioning as the coordinating center of sensation and intellectual and nervous activity."], ["category", "Anatomy"], ["created_at", "2017-10-12 06:46:33.044397"], ["updated_at", "2017-10-12 06:46:33.044397"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "midterm"], ["definition", "a test"], ["category", "School"], ["created_at", "2017-10-12 06:46:33.049034"], ["updated_at", "2017-10-12 06:46:33.049034"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-12 06:46:33.051713"], ["updated_at", "2017-10-12 06:46:33.051713"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "construction"], ["definition", " a type of work"], ["category", "Work"], ["created_at", "2017-10-12 06:46:33.054415"], ["updated_at", "2017-10-12 06:46:33.054415"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:46:45 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (20.5ms)
+Completed 200 OK in 289ms (Views: 275.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:47:28 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Word:0x007fb2419186d8>):
+    1: %strong "hello"
+    2: - @list.each do |word|
+    3: 	%p= word.title + word.definition
+    4: 
+    5: %strong "hello"
+  
+app/views/words/new.html.haml:3:in `block in _app_views_words_new_html_haml___2122502100891713434_70201755047940'
+app/views/words/new.html.haml:2:in `_app_views_words_new_html_haml___2122502100891713434_70201755047940'
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:47:36 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Word:0x007fb241aba770>):
+    1: %strong "hello"
+    2: - @list.each do |word|
+    3: 	%p= word.title word.definition
+    4: 
+    5: %strong "hello"
+  
+app/views/words/new.html.haml:3:in `block in _app_views_words_new_html_haml___2122502100891713434_70201791251720'
+app/views/words/new.html.haml:2:in `_app_views_words_new_html_haml___2122502100891713434_70201791251720'
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:47:44 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %p and nested within it.):
+    1: %strong "hello"
+    2: - @list.each do |word|
+    3: 	%p= word.title 
+    4: 		word.definition
+    5: 
+    6: %strong "hello"
+  
+app/views/words/new.html.haml:4
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:47:50 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Word:0x007fb23faadc20>):
+    1: %strong "hello"
+    2: - @list.each do |word|
+    3: 	%p= word.title 
+    4: 	word.definition
+    5: 
+    6: %strong "hello"
+  
+app/views/words/new.html.haml:3:in `block in _app_views_words_new_html_haml___2122502100891713434_70201745454540'
+app/views/words/new.html.haml:2:in `_app_views_words_new_html_haml___2122502100891713434_70201745454540'
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:53:47 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %p and nested within it.):
+    1: %strong "hello"
+    2: - @list.each do |word|
+    3: 	%p= word.title 
+    4: 		word.definition
+    5: 
+    6: %strong "hello"
+  
+app/views/words/new.html.haml:4
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:53:56 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %p and nested within it.):
+    1: %strong "hello"
+    2: - @list.each do |word|
+    3: 	%p= word.title 
+    4: 			word.definition
+    5: 
+    6: %strong "hello"
+  
+app/views/words/new.html.haml:4
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:54:30 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/developer/Desktop/DiidxaZaa/app/views/words/new.html.haml:3: syntax error, unexpected '}', expecting =>
+/Users/developer/Desktop/DiidxaZaa/app/views/words/new.html.haml:4: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << ...
+          ^
+/Users/developer/Desktop/DiidxaZaa/app/views/words/new.html.haml:4: syntax error, unexpected keyword_end, expecting ')'
+...ffer << ("</p>\n".freeze);; end;; _hamlout.buffer << ("<stro...
+...                               ^
+/Users/developer/Desktop/DiidxaZaa/app/views/words/new.html.haml:5: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/developer/Desktop/DiidxaZaa/app/views/words/new.html.haml:5: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                               ^
+/Users/developer/Desktop/DiidxaZaa/app/views/words/new.html.haml:8: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/words/new.html.haml:3: syntax error, unexpected '}', expecting =>
+app/views/words/new.html.haml:4: syntax error, unexpected ';', expecting ')'
+app/views/words/new.html.haml:4: syntax error, unexpected keyword_end, expecting ')'
+app/views/words/new.html.haml:5: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/words/new.html.haml:5: syntax error, unexpected keyword_end, expecting ')'
+app/views/words/new.html.haml:8: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:57:43 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:57:58 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:58:07 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:58:18 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:59:00 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "\t  " used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %strong "hello"
+    2: - @list.each do |word|
+    3: 	%p
+    4: 	  #{word.title}
+    5: 
+    6: %strong "hello"
+  
+app/views/words/new.html.haml:4
+Started GET "/words/new.html" for ::1 at 2017-10-11 23:59:14 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Word:0x007fb2429afa50>):
+    1: %strong "hello"
+    2: - @list.each do |word|
+    3: 	%p
+    4: 	#{word.title}
+    5: 
+    6: %strong "hello"
+  
+app/views/words/new.html.haml:4:in `block in _app_views_words_new_html_haml___2122502100891713434_70201798866240'
+app/views/words/new.html.haml:2:in `_app_views_words_new_html_haml___2122502100891713434_70201798866240'
+Started GET "/words/new.html" for ::1 at 2017-10-12 00:00:30 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-12 00:00:52 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-12 00:01:15 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-12 00:02:02 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `definitions' for #<Word:0x007fb24296d6a0>
+Did you mean?  definition
+               definition?
+               definition=
+               definition_was):
+    1: %strong "hello"
+    2: - @list.each do |word|
+    3: 	%p
+    4: 	#{word.word + ' ' + word.definitions}
+  
+app/views/words/new.html.haml:4:in `block in _app_views_words_new_html_haml___2122502100891713434_70201799550640'
+app/views/words/new.html.haml:2:in `_app_views_words_new_html_haml___2122502100891713434_70201799550640'
+Started GET "/words/new.html" for ::1 at 2017-10-12 00:02:11 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-12 00:02:20 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-12 00:02:32 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-12 00:03:39 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-12 11:16:29 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (7.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (35.8ms)
+Completed 200 OK in 100ms (Views: 78.7ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:17:34 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/developer/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/developer/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 21ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:17:37 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/developer/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/developer/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-13 23:17:38 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (13.8ms)
+Started GET "/words/new.html" for ::1 at 2017-10-13 23:17:39 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 7250ms (Views: 7247.1ms | ActiveRecord: 0.6ms)
+
+
+Completed 200 OK in 8371ms (Views: 8365.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-13 23:19:27 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 287ms (Views: 275.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:19:29 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 49ms (Views: 46.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:19:30 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 41ms (Views: 38.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:19:36 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/new.html" for ::1 at 2017-10-13 23:19:39 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 47ms (Views: 44.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:19:40 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 44ms (Views: 41.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:20:33 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 3619ms (Views: 3615.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:21:16 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:22:56 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h1 and nested within it.):
+    1: %h1 Welcome to my boots collection
+    2: 	%p checkout my boots I have a lot of them
+    3: - @list.each do |word|
+    4: 	%p
+    5: 	#{word.word + ': ' + word.definition}
+  
+app/views/words/new.html.haml:2
+Started GET "/" for ::1 at 2017-10-13 23:23:22 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h1 and nested within it.):
+    1: %h1 Welcome to my boots collection
+    2:   %p checkout my boots I have a lot of them
+    3: - @list.each do |word|
+    4: 	%p
+    5: 	#{word.word + ': ' + word.definition}
+  
+app/views/words/new.html.haml:2
+Started GET "/" for ::1 at 2017-10-13 23:23:27 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:30:35 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (27.7ms)
+Completed 200 OK in 161ms (Views: 146.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:37:22 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 64ms (Views: 60.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:38:16 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:38:18 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:38:20 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:38:26 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 41ms (Views: 38.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:38:34 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:39:13 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:39:41 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:39:42 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:40:06 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:40:12 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:45:08 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:45:10 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:45:37 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:45:39 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:45:45 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 37ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:45:45 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:45:45 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:45:46 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:45:46 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:46:37 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:46:40 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:46:49 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:46:51 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 44ms (Views: 41.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:47:44 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 344ms (Views: 332.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:47:44 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 100ms (Views: 95.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:47:57 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 43ms (Views: 39.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:50:08 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 42ms (Views: 39.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:50:10 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:51:27 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (16.7ms)
+Completed 200 OK in 309ms (Views: 296.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:51:32 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 57ms (Views: 53.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:51:33 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:51:37 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:51:39 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 60ms (Views: 58.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:54:10 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 137ms (Views: 133.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:54:12 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 48ms (Views: 44.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:54:23 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 50ms (Views: 45.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:57:20 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 5302ms (Views: 5299.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:57:46 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 3773ms (Views: 3770.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:58:41 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 2565ms (Views: 2563.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:58:45 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 40ms (Views: 35.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:58:48 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:59:01 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 91ms (Views: 88.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:59:04 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-13 23:59:05 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:04:42 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 2592ms (Views: 2589.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:05:00 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 2236ms (Views: 2233.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:05:18 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 2502ms (Views: 2498.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:06:14 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 2278ms (Views: 2276.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:06:46 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 2324ms (Views: 2321.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:07:41 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:08:00 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 2466ms (Views: 2463.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:09:38 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 2460ms (Views: 2457.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:10:08 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:10:38 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 55ms (Views: 50.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:10:52 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 2494ms (Views: 2490.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:11:46 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 2493ms (Views: 2490.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:12:07 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 2493ms (Views: 2489.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:12:29 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 44ms (Views: 41.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:12:43 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 2457ms (Views: 2454.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:13:21 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 2488ms (Views: 2485.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:13:49 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 2616ms (Views: 2613.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:14:16 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:15:41 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 2706ms (Views: 2703.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:16:38 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 2681ms (Views: 2678.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:16:52 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 2541ms (Views: 2537.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:17:04 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:17:09 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:17:10 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:17:10 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:17:28 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 2511ms (Views: 2508.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:17:54 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 2712ms (Views: 2709.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:18:09 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 2577ms (Views: 2573.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:21:05 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 2695ms (Views: 2690.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:21:17 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 2820ms (Views: 2817.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:22:31 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 2793ms (Views: 2790.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:23:42 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 2802ms (Views: 2798.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:25:27 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 2667ms (Views: 2662.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:27:17 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 2567ms (Views: 2565.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:27:49 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 2876ms (Views: 2873.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:28:28 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 2603ms (Views: 2599.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:29:19 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 2931ms (Views: 2925.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:29:39 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 2636ms (Views: 2632.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:29:57 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 2470ms (Views: 2466.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:30:13 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 2759ms (Views: 2755.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:30:27 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 2601ms (Views: 2596.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:31:12 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 2699ms (Views: 2694.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:31:30 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 2594ms (Views: 2591.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:32:41 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 2199ms (Views: 2196.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:33:02 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 43ms (Views: 40.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:33:50 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 2896ms (Views: 2893.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:35:08 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 2764ms (Views: 2760.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:35:58 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 2754ms (Views: 2751.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:36:34 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 2636ms (Views: 2633.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:36:48 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 2602ms (Views: 2599.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:38:35 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 2715ms (Views: 2712.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:39:35 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 47ms (Views: 44.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:41:17 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 2817ms (Views: 2814.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:41:40 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 2625ms (Views: 2621.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:42:01 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 2593ms (Views: 2590.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:44:43 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 2831ms (Views: 2828.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:45:11 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 830ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "	height": expected ";", was ": 140px;"):
+    4:     <title>Diidxazaa</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/words.scss:42
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3465920368484263525_70358560654440'
+Started GET "/" for ::1 at 2017-10-14 00:45:44 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 2700ms (Views: 2688.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:47:39 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 720ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "	height": expected ";", was ": 100px;"):
+    4:     <title>Diidxazaa</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/words.scss:33
+app/assets/stylesheets/application.scss:2
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3465920368484263525_70358495371440'
+Started GET "/" for ::1 at 2017-10-14 00:47:48 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 2604ms (Views: 2600.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 00:49:48 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 12:24:26 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (17.4ms)
+Completed 200 OK in 361ms (Views: 350.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:00:48 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (19.5ms)
+Completed 200 OK in 4508ms (Views: 4494.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:01:25 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 43ms (Views: 38.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:01:28 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:01:39 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:02:10 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 66ms (Views: 62.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:02:14 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 54ms (Views: 51.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:03:01 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 1 tab used for indentation, but the rest of the document was indented using 2 spaces.):
+    13:         %a{:href => "#"} Page 3
+    14: 
+    15: %div.container
+    16: 	%h1 Welcome to my boots collection
+    17: 	%p checkout my boots I have a lot of them
+    18: 	- @list.each do |word|
+    19: 		%div.container.hello
+  
+app/views/words/new.html.haml:16
+Started GET "/" for ::1 at 2017-10-14 23:03:25 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 3 spaces.):
+    1: %nav.navbar.navbar-default
+    2:    .container-fluid
+    3:      .navbar-header
+    4:        %a.navbar-brand{:href => "#"} WebSiteName
+    5:      %ul.nav.navbar-nav
+    6:        %li.active
+  
+app/views/words/new.html.haml:3
+Started GET "/" for ::1 at 2017-10-14 23:04:23 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "       \t\t" used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %nav.navbar.navbar-default
+    2: 	.container-fluid
+    3: 		.navbar-header
+    4:        		%a.navbar-brand{:href => "#"} WebSiteName
+    5:      		%ul.nav.navbar-nav
+    6:        			%li.active
+    7:          			%a{:href => "#"} Home
+  
+app/views/words/new.html.haml:4
+Started GET "/" for ::1 at 2017-10-14 23:04:41 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "       \t\t" used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %nav.navbar.navbar-default
+    2: 	.container-fluid
+    3: 		.navbar-header
+    4:        		%a.navbar-brand{:href => "#"} WebSiteName
+    5:      		%ul.nav.navbar-nav
+    6:        			%li.active
+    7:          			%a{:href => "#"} Home
+  
+app/views/words/new.html.haml:4
+Started GET "/" for ::1 at 2017-10-14 23:07:13 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 52ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:07:41 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:07:43 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:07:43 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:08:35 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (16.1ms)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:08:44 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (15.8ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:08:45 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 48ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:09:21 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (1.8ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Word Load (0.0ms)[0m  [1m[34mSELECT  "words".* FROM "words" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered words/new.html.haml within layouts/application (57.6ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `applications_path' for #<#<Class:0x007fa0f54b3398>:0x007fa0fb860008>):
+    14:           %li
+    15:             = link_to 'Link', '#'
+    16:           %li
+    17:             = link_to 'Apps', applications_path
+    18:           %ul{:class => "nav secondary-nav"}
+    19:             %li.dropdown
+    20:               = link_to 'Dropdown', '#', {:class => 'dropdown-toggle'}
+  
+app/views/words/new.html.haml:17:in `_app_views_words_new_html_haml___380823269817967662_70164695682180'
+Started GET "/" for ::1 at 2017-10-14 23:09:42 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Indenting at the beginning of the document is illegal.):
+    1:     %nav.navbar.navbar-default{role: "navigation"}
+    2:       / Brand and toggle get grouped for better mobile display
+    3:       .navbar-header
+    4:         %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", type: "button"}
+  
+app/views/words/new.html.haml:1
+Started GET "/" for ::1 at 2017-10-14 23:10:10 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:10:45 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 2595ms (Views: 2591.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:12:03 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 59ms (Views: 54.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:12:56 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 54ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:13:01 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 41ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:13:01 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:13:02 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 42ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:13:02 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 45ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:13:22 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:13:36 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %a and nested within it.):
+    1: %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    2:   %a.navbar-brand{:href => "#"} Navbar
+    3:     %span.navbar-toggler-icon
+    4:   #navbarSupportedContent.collapse.navbar-collapse
+    5:     %ul.navbar-nav.mr-auto
+    6:       %li.nav-item
+  
+app/views/words/new.html.haml:3
+Started GET "/" for ::1 at 2017-10-14 23:13:51 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:14:01 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:14:09 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:14:21 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 37ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:15:01 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:15:34 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:16:30 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:16:55 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  Rendered words/new.html.haml within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 1 tab used for indentation, but the rest of the document was indented using 2 spaces.):
+    11: 
+    12: 
+    13: %div.container
+    14: 	%h1 Welcome to my boots collection
+    15: 	%p checkout my boots I have a lot of them
+    16: 	- @list.each do |word|
+    17: 		%div.container.hello
+  
+app/views/words/new.html.haml:14
+Started GET "/" for ::1 at 2017-10-14 23:17:26 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 39ms (Views: 34.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:18:35 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 43ms (Views: 39.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:18:40 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 58ms (Views: 53.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:19:14 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:19:23 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:19:52 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:20:47 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 38ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:21:06 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:21:37 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 52ms (Views: 46.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:22:26 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 2720ms (Views: 2718.2ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "words"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "words" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "word" varchar, "definition" varchar, "category" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171012062034)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-15 06:24:44.744803"], ["updated_at", "2017-10-15 06:24:44.744803"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "words"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "words" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "word" varchar, "definition" varchar, "category" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20171012062034)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-15 06:24:44.759602"], ["updated_at", "2017-10-15 06:24:44.759602"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "brain"], ["definition", "an organ of soft nervous tissue contained in the skull of vertebrates, functioning as the coordinating center of sensation and intellectual and nervous activity."], ["category", "Anatomy"], ["created_at", "2017-10-15 06:25:48.493990"], ["updated_at", "2017-10-15 06:25:48.493990"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "midterm"], ["definition", "a test"], ["category", "School"], ["created_at", "2017-10-15 06:25:48.499128"], ["updated_at", "2017-10-15 06:25:48.499128"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:25:48.502025"], ["updated_at", "2017-10-15 06:25:48.502025"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "construction"], ["definition", " a type of work"], ["category", "Work"], ["created_at", "2017-10-15 06:25:48.505488"], ["updated_at", "2017-10-15 06:25:48.505488"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:25:48.508271"], ["updated_at", "2017-10-15 06:25:48.508271"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:25:48.510756"], ["updated_at", "2017-10-15 06:25:48.510756"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:25:48.513392"], ["updated_at", "2017-10-15 06:25:48.513392"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:25:48.516204"], ["updated_at", "2017-10-15 06:25:48.516204"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:25:48.518412"], ["updated_at", "2017-10-15 06:25:48.518412"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:25:48.520447"], ["updated_at", "2017-10-15 06:25:48.520447"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:25:48.522361"], ["updated_at", "2017-10-15 06:25:48.522361"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:25:48.524497"], ["updated_at", "2017-10-15 06:25:48.524497"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2017-10-14 23:26:05 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (23.1ms)
+Completed 200 OK in 395ms (Views: 382.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:26:18 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (19.7ms)
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:26:19 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (20.5ms)
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:26:19 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 51ms (Views: 47.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 23:26:44 -0700
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 42ms (Views: 39.8ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "brain"], ["definition", "an organ of soft nervous tissue contained in the skull of vertebrates, functioning as the coordinating center of sensation and intellectual and nervous activity."], ["category", "Anatomy"], ["created_at", "2017-10-15 06:27:39.085156"], ["updated_at", "2017-10-15 06:27:39.085156"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "midterm"], ["definition", "a test"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.089912"], ["updated_at", "2017-10-15 06:27:39.089912"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.092149"], ["updated_at", "2017-10-15 06:27:39.092149"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "construction"], ["definition", " a type of work"], ["category", "Work"], ["created_at", "2017-10-15 06:27:39.094857"], ["updated_at", "2017-10-15 06:27:39.094857"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.097422"], ["updated_at", "2017-10-15 06:27:39.097422"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.099774"], ["updated_at", "2017-10-15 06:27:39.099774"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.102439"], ["updated_at", "2017-10-15 06:27:39.102439"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.104630"], ["updated_at", "2017-10-15 06:27:39.104630"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.107280"], ["updated_at", "2017-10-15 06:27:39.107280"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.109845"], ["updated_at", "2017-10-15 06:27:39.109845"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.112626"], ["updated_at", "2017-10-15 06:27:39.112626"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.115357"], ["updated_at", "2017-10-15 06:27:39.115357"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "construction"], ["definition", " a type of work"], ["category", "Work"], ["created_at", "2017-10-15 06:27:39.118206"], ["updated_at", "2017-10-15 06:27:39.118206"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.120441"], ["updated_at", "2017-10-15 06:27:39.120441"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.123507"], ["updated_at", "2017-10-15 06:27:39.123507"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.125751"], ["updated_at", "2017-10-15 06:27:39.125751"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.127867"], ["updated_at", "2017-10-15 06:27:39.127867"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.130387"], ["updated_at", "2017-10-15 06:27:39.130387"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.132863"], ["updated_at", "2017-10-15 06:27:39.132863"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.136156"], ["updated_at", "2017-10-15 06:27:39.136156"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.138591"], ["updated_at", "2017-10-15 06:27:39.138591"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "construction"], ["definition", " a type of work"], ["category", "Work"], ["created_at", "2017-10-15 06:27:39.141258"], ["updated_at", "2017-10-15 06:27:39.141258"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.144091"], ["updated_at", "2017-10-15 06:27:39.144091"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.146038"], ["updated_at", "2017-10-15 06:27:39.146038"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.148478"], ["updated_at", "2017-10-15 06:27:39.148478"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.151218"], ["updated_at", "2017-10-15 06:27:39.151218"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.153764"], ["updated_at", "2017-10-15 06:27:39.153764"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.156548"], ["updated_at", "2017-10-15 06:27:39.156548"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.159067"], ["updated_at", "2017-10-15 06:27:39.159067"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "words" ("word", "definition", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["word", "literature"], ["definition", "a type of word"], ["category", "School"], ["created_at", "2017-10-15 06:27:39.161539"], ["updated_at", "2017-10-15 06:27:39.161539"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2017-10-14 23:27:49 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#new as HTML
+  Rendering words/new.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/new.html.haml within layouts/application (19.8ms)
+Completed 200 OK in 298ms (Views: 286.5ms | ActiveRecord: 0.9ms)
+
+

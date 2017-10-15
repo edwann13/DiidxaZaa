@@ -1,0 +1,21 @@
+%nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
+  %a.navbar-brand{:href => "#"} Navbar
+  #navbarSupportedContent.collapse.navbar-collapse
+    %ul.navbar-nav.mr-auto
+      %li.nav-item
+        %a.nav-link{:href => "#"} Home
+      %li.nav-item
+        %a.nav-link{:href => "#"} About
+      %li.nav-item
+        %a.nav-link{:href => "#"} Study
+
+
+%div.container
+  %h1 Welcome!!!
+  %p checkout all of the words!!!
+  - @list.each do |word|
+    %div.container.hello
+      %div.container.oneWordBox
+        %p.hello1 #{word.word}
+        %p.hello2 #{word.definition}
+
