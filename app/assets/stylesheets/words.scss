@@ -1,0 +1,48 @@
+// Place all the styles related to the Words controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+	background-color: #DCDCDC;
+	padding-top:70px;
+}
+.hello {
+  
+  
+  padding: 20px;
+}
+
+.hello1 {
+	float: left;
+	height: 100px;
+
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px; 
+
+}
+
+.hello2 {
+	overflow: hidden;
+	
+	border-left: 0.125rem solid #f0f0f0;
+	height: 100px;
+
+	margin-left: 110px;
+	padding-left: 80px;
+
+}
+
+.oneWordBox {
+	background-color: white;
+	width: 986px;
+	height: 140px;
+}
+
+
+
