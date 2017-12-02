@@ -8,9 +8,16 @@ $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 
 body {
-	background-color: #DCDCDC;
+	background-color: rgb(236, 240, 241);
 	padding-top:70px;
 }
+
+
+
+.bg-light1 {
+    background-color: rgb(110, 211, 207);
+}
+
 .hello {
   
   
@@ -19,12 +26,21 @@ body {
 
 .hello1 {
 	background-color: white;
-	padding: 50px
+	padding: 50px;
+    font-family: "Lucida Grande","Lucida Sans Unicode",Arial,sans-serif;
+
 }
 
 .hello2 {
 	background-color: white;
-	padding: 50px
+	padding: 50px;
+    font-family: "Lucida Grande","Lucida Sans Unicode",Arial,sans-serif;
+    align: left;
+
+}
+
+a {
+	color:black;
 }
 
 
@@ -38,6 +54,30 @@ body {
 	border-radius: 15px 0px 0px 15px;
 }
 
+.roundCenter {
+	border-radius: 0px, 0px, 0px, 0px;
+}
 .roundRight {
 	border-radius: 0px 15px 15px 0px;
 }
+
+
+ul.nav a:hover { color: red; }
+
+
+.sampleImage {
+
+	align: left;
+	background-color: white;
+	padding: 50px;
+}
+
+.zapo {
+	
+	align: left;
+}
+
+
+
+
+

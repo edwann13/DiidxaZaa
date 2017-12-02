@@ -1,0 +1,27 @@
+/ <!DOCTYPE html>
+%html
+  %head
+    %title>Diidxazaa
+    = csrf_meta_tags
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  %body
+    %nav.navbar.navbar-expand-lg.navbar-light.bg-light1.fixed-top
+      %a.navbar-brand{:href => "#{root_path}"} DiidxaZaa
+      #navbarSupportedContent.collapse.navbar-collapse
+        %ul.navbar-nav.mr-auto
+          %li.nav-item
+            %a.nav-link{:href => "#{root_path}"} Home
+          %li.nav-item
+            %a.nav-link{:href => "#{word_path(:id => "show")}"} Vocabulario
+          %li.nav-item
+            %a.nav-link{:href => "#{root_path}"} Gramatica
+          %li.nav-item
+            %a.nav-link{:href => "#{root_path}"} Tracductor
+          %li.nav-item
+            %a.nav-link{:href => "#{root_path}"} Videos  
+    = yield
+
+
