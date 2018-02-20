@@ -1,0 +1,32 @@
+-# %div.container
+-# 	%div.row
+-# 		%div.col-md-7.createWord
+-# 			= form_tag("create", method: 'post') do 
+-# 				= label_tag(:EnglishWord, "Enter the English word")
+-# 				%br
+-# 				= text_field_tag(:english, nil, placeholder: "English word")
+-# 				%br
+-# 				= label_tag(:SpanishWord, "Enter the Spanish word.\n")
+-# 				%br
+-# 				= text_field_tag(:spanish, nil, placeholder: "Spanish word")
+-# 				%br
+-# 				= label_tag(:ZapotecoWord, "Enter the Zapoteco word.")
+-# 				%br
+-# 				= text_field_tag(:zapoteco, nil, placeholder: "Zapoteco word")
+-# 				%br
+-# 				= submit_tag("Add New word")
+
+%div.update
+	= simple_form_for @word, url: '/words/create', method: :post do |f|
+		= f.input :word, label: 'English', :input_html => { :value => "Email"}
+		= f.input :spanish, label: 'Spanish', :input_html => { :value => "Email"}
+		= f.input :zapoteco, label: 'Zapoteco', :input_html => { :value => "Email"}
+		= f.submit "Create New Word"
+
+%div.update
+	- word = Word.find(1)
+	= simple_form_for @word, url: root_path, method: :get do |f|
+		= f.input :spanish, :input_html => { :value => "#{word.spanish}"}
+		= f.input :zapoteco, :input_html => { :value => "#{word.zapoteco}"}
+		= f.input :word, label: 'English', :input_html => { :value => "#{word.word}"}
+		= f.submit "Update Word"

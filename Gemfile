@@ -6,11 +6,18 @@ git_source(:github) do |repo_name|
 end
 
 
+gem 'factory_girl'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3.rc2'
 # Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
+gem 'sqlite3'
 # gem 'pg'
+
+gem 'webpacker'
+gem 'react-rails'
+
+gem 'devise'
 
 #bootstrap
 gem 'bootstrap'
@@ -37,10 +44,21 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem "haml"
-
+ 
 gem 'jquery-rails'
 
 gem 'simple_form'
+
+
+group :test do
+  gem 'chromedriver-helper'
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+  gem 'capybara', '~> 2.13'
+  gem 'selenium-webdriver'
+  gem 'rspec-rails'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -48,6 +66,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -57,6 +76,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'rspec-rails'
 end
 
 group :production do 

@@ -1,0 +1,1656 @@
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-01-03 19:42:44 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (10.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Hash: bb0d4cc1ad6926de9563
+Version: webpack 3.10.0
+Time: 2055ms
+                                   Asset       Size  Chunks                    Chunk Names
+server_rendering-0be8b3e8fcc0d37d1f11.js     916 kB       0  [emitted]  [big]  server_rendering
+     application-013b62acf0b30a881c2c.js     916 kB       1  [emitted]  [big]  application
+     hello_react-33891c4e27dce382884f.js     644 kB       2  [emitted]  [big]  hello_react
+                           manifest.json  225 bytes          [emitted]         
+  [47] ./app/javascript/components ^\.\/.*$ 245 bytes {0} {1} [built]
+  [87] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [88] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [89] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 86 hidden modules
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: Can't resolve 'HelloWorld.js' in '/Users/developer/Desktop/untitled folder/DiidxaZaa/app/javascript/components'
+ @ ./app/javascript/components/App.js 9:0-24
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/server_rendering.js
+
+
+Completed 200 OK in 9518ms (Views: 9509.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-01-03 19:45:41 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 1327ms (Views: 1318.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-01-03 19:53:06 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 1197ms (Views: 1187.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-01-03 19:53:59 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 1267ms (Views: 1258.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-01-03 19:54:59 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 1170ms (Views: 1161.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-01-03 20:01:57 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 1283ms (Views: 1275.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:38:05 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 1343ms (Views: 1335.5ms | ActiveRecord: 0.0ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 20:38:07 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 19ms (Views: 11.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:38:07 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:38:07 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:38:07 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:38:51 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 1254ms (Views: 1246.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:38:52 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:38:52 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:38:52 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:39:06 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 1405ms (Views: 1396.0ms | ActiveRecord: 0.0ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 20:39:08 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 21ms (Views: 11.8ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:39:08 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:39:08 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:39:08 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:41:38 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 1585ms (Views: 1577.6ms | ActiveRecord: 0.0ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 20:41:40 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:41:40 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:41:40 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 20:41:40 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:01:53 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 1382ms (Views: 1374.3ms | ActiveRecord: 0.0ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 21:01:54 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (1.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 17ms (Views: 10.8ms | ActiveRecord: 1.9ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:01:54 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:01:54 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:01:54 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:03:02 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 1340ms (Views: 1331.1ms | ActiveRecord: 0.0ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 21:03:03 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:03:03 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:03:03 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:03:03 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:07:28 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 1431ms (Views: 1423.6ms | ActiveRecord: 0.0ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 21:07:29 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 17ms (Views: 11.3ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:07:29 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:07:29 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:07:29 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:08:06 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 1350ms (Views: 1341.8ms | ActiveRecord: 0.0ms)
+Started GET "/word/All" for 127.0.0.1 at 2018-01-03 21:08:07 -0800
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:08:07 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:08:07 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:08:07 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:09:02 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 1335ms (Views: 1327.4ms | ActiveRecord: 0.0ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 21:09:04 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 19ms (Views: 11.7ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:09:04 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:09:04 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:09:04 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:10:45 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 1384ms (Views: 1373.4ms | ActiveRecord: 0.0ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 21:10:47 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 18ms (Views: 11.0ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:10:47 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 11ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:10:47 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:10:47 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (1.2ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.7ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (1.6ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:48:23 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 1574ms (Views: 1564.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:48:24 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:48:24 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (1.4ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (1.3ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:48:57 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 1315ms (Views: 1306.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:48:58 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:48:58 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:51:24 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 1348ms (Views: 1340.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-a9da592d8dea6a137bad17265e22cec4e8b388da40d1c4927b40b86f6610ff6a.css" for 127.0.0.1 at 2018-01-03 21:51:26 -0800
+Started GET "/assets/application-b8f6af93ad136dd73ba0e8b635ac148aed39bbaf272e807712ad19ed03758f47.js" for 127.0.0.1 at 2018-01-03 21:51:26 -0800
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 21:51:26 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 25ms (Views: 14.6ms | ActiveRecord: 2.0ms)
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.9ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.4ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (2.4ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:51:29 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:51:29 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:51:29 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:51:45 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 1379ms (Views: 1367.4ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-b8f6af93ad136dd73ba0e8b635ac148aed39bbaf272e807712ad19ed03758f47.js" for 127.0.0.1 at 2018-01-03 21:51:47 -0800
+Started GET "/assets/application-a9da592d8dea6a137bad17265e22cec4e8b388da40d1c4927b40b86f6610ff6a.css" for 127.0.0.1 at 2018-01-03 21:51:47 -0800
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 21:51:47 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 22ms (Views: 14.0ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.3ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (0.6ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:51:49 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 27ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:51:49 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:51:49 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:54:49 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 1692ms (Views: 1683.9ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-a9da592d8dea6a137bad17265e22cec4e8b388da40d1c4927b40b86f6610ff6a.css" for 127.0.0.1 at 2018-01-03 21:54:51 -0800
+Started GET "/assets/application-b8f6af93ad136dd73ba0e8b635ac148aed39bbaf272e807712ad19ed03758f47.js" for 127.0.0.1 at 2018-01-03 21:54:51 -0800
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 21:54:52 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 22ms (Views: 14.0ms | ActiveRecord: 1.4ms)
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.4ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (2.0ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:54:54 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:54:54 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:54:54 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:55:45 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (26.7ms)
+Completed 200 OK in 1423ms (Views: 1411.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-b8f6af93ad136dd73ba0e8b635ac148aed39bbaf272e807712ad19ed03758f47.js" for 127.0.0.1 at 2018-01-03 21:55:46 -0800
+Started GET "/assets/application-a9da592d8dea6a137bad17265e22cec4e8b388da40d1c4927b40b86f6610ff6a.css" for 127.0.0.1 at 2018-01-03 21:55:46 -0800
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 21:55:47 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 29ms (Views: 18.1ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.1ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (0.8ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:55:49 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:55:49 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:55:49 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:56:34 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 1700ms (Views: 1690.5ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-a9da592d8dea6a137bad17265e22cec4e8b388da40d1c4927b40b86f6610ff6a.css" for 127.0.0.1 at 2018-01-03 21:56:35 -0800
+Started GET "/assets/application-b8f6af93ad136dd73ba0e8b635ac148aed39bbaf272e807712ad19ed03758f47.js" for 127.0.0.1 at 2018-01-03 21:56:35 -0800
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 21:56:36 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 32ms (Views: 16.3ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.4ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.3ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (1.5ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:56:38 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:56:38 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:56:38 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:59:01 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 1910ms (Views: 1899.1ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-a9da592d8dea6a137bad17265e22cec4e8b388da40d1c4927b40b86f6610ff6a.css" for 127.0.0.1 at 2018-01-03 21:59:03 -0800
+Started GET "/assets/application-b8f6af93ad136dd73ba0e8b635ac148aed39bbaf272e807712ad19ed03758f47.js" for 127.0.0.1 at 2018-01-03 21:59:03 -0800
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 21:59:03 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 27ms (Views: 15.5ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.5ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (1.7ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:59:06 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:59:06 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 21:59:06 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:00:05 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 1445ms (Views: 1431.5ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-a9da592d8dea6a137bad17265e22cec4e8b388da40d1c4927b40b86f6610ff6a.css" for 127.0.0.1 at 2018-01-03 22:00:07 -0800
+Started GET "/assets/application-b8f6af93ad136dd73ba0e8b635ac148aed39bbaf272e807712ad19ed03758f47.js" for 127.0.0.1 at 2018-01-03 22:00:07 -0800
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:00:07 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 30ms (Views: 18.1ms | ActiveRecord: 2.6ms)
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.1ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (0.5ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:00:09 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:00:09 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:00:10 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.7ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (1.0ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:00:53 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 1336ms (Views: 1325.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:00:54 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:00:54 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:01:59 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 1413ms (Views: 1399.5ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-a9da592d8dea6a137bad17265e22cec4e8b388da40d1c4927b40b86f6610ff6a.css" for 127.0.0.1 at 2018-01-03 22:02:00 -0800
+Started GET "/assets/application-b8f6af93ad136dd73ba0e8b635ac148aed39bbaf272e807712ad19ed03758f47.js" for 127.0.0.1 at 2018-01-03 22:02:00 -0800
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:02:01 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (16.6ms)
+Completed 200 OK in 49ms (Views: 27.4ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (3.7ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (1.1ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:02:03 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:02:03 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:02:03 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:02:41 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 1443ms (Views: 1433.9ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-a9da592d8dea6a137bad17265e22cec4e8b388da40d1c4927b40b86f6610ff6a.css" for 127.0.0.1 at 2018-01-03 22:02:42 -0800
+Started GET "/assets/application-b8f6af93ad136dd73ba0e8b635ac148aed39bbaf272e807712ad19ed03758f47.js" for 127.0.0.1 at 2018-01-03 22:02:42 -0800
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:02:43 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 34ms (Views: 16.2ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.1ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (0.7ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:02:45 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:02:45 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:02:45 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:07:15 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 1585ms (Views: 1575.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-a9da592d8dea6a137bad17265e22cec4e8b388da40d1c4927b40b86f6610ff6a.css" for 127.0.0.1 at 2018-01-03 22:07:16 -0800
+Started GET "/assets/application-b8f6af93ad136dd73ba0e8b635ac148aed39bbaf272e807712ad19ed03758f47.js" for 127.0.0.1 at 2018-01-03 22:07:16 -0800
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:07:17 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 24ms (Views: 13.4ms | ActiveRecord: 1.2ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:07:28 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:07:33 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:08:04 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+Started GET "/assets/application-a9da592d8dea6a137bad17265e22cec4e8b388da40d1c4927b40b86f6610ff6a.css" for 127.0.0.1 at 2018-01-03 22:08:04 -0800
+Started GET "/assets/application-b8f6af93ad136dd73ba0e8b635ac148aed39bbaf272e807712ad19ed03758f47.js" for 127.0.0.1 at 2018-01-03 22:08:04 -0800
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:08:08 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+Started GET "/words/want" for 127.0.0.1 at 2018-01-03 22:08:41 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"want"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE (substr(name, 1, 1 = 'want')[0m
+  Rendered words/show.html.haml within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:08:47 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at 2018-01-03 22:08:50 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:08:51 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at 2018-01-03 22:08:53 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:08:54 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (3.0ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (1.0ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.2ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (1.2ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.4ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (1.4ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:12:01 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 1210ms (Views: 1202.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:12:02 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:12:02 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.1ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (0.7ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/:3000/words" for 127.0.0.1 at 2018-01-03 22:12:38 -0800
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/:3000/words" for 127.0.0.1 at 2018-01-03 22:12:38 -0800
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/:3000/words" for 127.0.0.1 at 2018-01-03 22:12:38 -0800
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (3.2ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (1.0ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:13:02 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1378ms (Views: 1367.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:13:04 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:13:04 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:13:27 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 1444ms (Views: 1434.2ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-a9da592d8dea6a137bad17265e22cec4e8b388da40d1c4927b40b86f6610ff6a.css" for 127.0.0.1 at 2018-01-03 22:13:29 -0800
+Started GET "/assets/application-b8f6af93ad136dd73ba0e8b635ac148aed39bbaf272e807712ad19ed03758f47.js" for 127.0.0.1 at 2018-01-03 22:13:29 -0800
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:13:29 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 31ms (Views: 20.6ms | ActiveRecord: 1.7ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:13:35 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.3ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:13:40 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+Started GET "/words/show" for 127.0.0.1 at 2018-01-03 22:13:46 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words" WHERE (substr(name, 1, 1 = 'show')[0m
+  Rendered words/show.html.haml within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:13:57 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:15:06 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (1.0ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (0.9ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:15:07 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:15:07 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:15:07 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:15:40 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (16.7ms)
+Completed 200 OK in 1679ms (Views: 1667.7ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-a9da592d8dea6a137bad17265e22cec4e8b388da40d1c4927b40b86f6610ff6a.css" for 127.0.0.1 at 2018-01-03 22:15:42 -0800
+Started GET "/assets/application-b8f6af93ad136dd73ba0e8b635ac148aed39bbaf272e807712ad19ed03758f47.js" for 127.0.0.1 at 2018-01-03 22:15:42 -0800
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:15:43 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 38ms (Views: 24.1ms | ActiveRecord: 1.4ms)
+Started GET "/" for 127.0.0.1 at 2018-01-03 22:16:08 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:16:10 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at 2018-01-03 22:16:11 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:16:12 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:16:14 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:16:19 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:16:38 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.5ms)
+  [1m[35m (1.8ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.5ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (1.0ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:17:23 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.5ms)
+Started GET "/words/All" for 127.0.0.1 at 2018-01-03 22:18:50 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.9ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (1.2ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:19:05 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:19:05 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-03 22:19:05 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-10 16:56:44 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 1773ms (Views: 1763.8ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-a9da592d8dea6a137bad17265e22cec4e8b388da40d1c4927b40b86f6610ff6a.css" for 127.0.0.1 at 2018-01-10 16:56:46 -0800
+Started GET "/assets/application-b8f6af93ad136dd73ba0e8b635ac148aed39bbaf272e807712ad19ed03758f47.js" for 127.0.0.1 at 2018-01-10 16:56:46 -0800
+Started GET "/words/All" for 127.0.0.1 at 2018-01-10 16:56:46 -0800
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"All"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 29ms (Views: 14.0ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (3.4ms)[0m  [1m[31mDELETE FROM "words";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'words';[0m
+  [1m[35m (1.4ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-10 17:00:09 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-10 17:00:09 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/words" for 127.0.0.1 at 2018-01-10 17:00:09 -0800
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m

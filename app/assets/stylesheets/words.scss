@@ -12,6 +12,28 @@ body {
 	padding-top:70px;
 }
 
+.square {
+	background-color: rgb(110, 211, 207);
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin : 43px;
+	float: left;
+	display: block;
+	
+
+}
+.squareText {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 50%;
+	height: 30%;
+	margin: auto;
+}
+
 
 
 .bg-light1 {
@@ -77,6 +99,24 @@ ul.nav a:hover { color: red; }
 	align: left;
 }
 
+.hello10 {
+	background-color: red;
+	padding: 50px;
+	width: 100px;
+	height: 100px;
+	margin-top: 30px;
+}
+
+.update {
+	width: 40%;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+.rightShift {
+	float: right;
+	position: relative;
+}
 
 
 

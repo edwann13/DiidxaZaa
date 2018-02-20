@@ -1,0 +1,18 @@
+%div.container.rounded
+  - arr = @list.to_a
+  - @list.each do |word|
+    %div.row
+      %div.col-md-3.hello1.top-buffer.roundLeft{:id => "hello"}
+        / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+        %a.text{:href => "#{carousel_set_words_path(word.word)}" }
+          / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+          %p.hello1 #{word.word}
+      %div.col-md-5.hello2.top-buffer.roundCenter
+        %p.hello2 #{word.showWord(word, @lang)}
+        / %p.hello2 #{word.spanish}
+        / %p.zapo #{word.zapoteco}
+      
+      %div.col-md-4.top-buffer.roundRight.sampleImage
+        = image_tag "sample.png", height: '180', width: '180'
+
+        

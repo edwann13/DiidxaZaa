@@ -18,4 +18,6 @@
 //= require bootstrap
 //= require_tree .
 //= require words
+//= require jquery
+//= require jquery_ujs
 

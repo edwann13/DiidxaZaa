@@ -1,4 +1,7 @@
 / <!DOCTYPE html>
+= javascript_pack_tag 'application'
+
+
 %html
   %head
     %title>Diidxazaa
@@ -15,13 +18,21 @@
           %li.nav-item
             %a.nav-link{:href => "#{root_path}"} Home
           %li.nav-item
-            %a.nav-link{:href => "#{word_path(:id => "show")}"} Vocabulario
-          %li.nav-item
-            %a.nav-link{:href => "#{root_path}"} Gramatica
-          %li.nav-item
-            %a.nav-link{:href => "#{root_path}"} Tracductor
-          %li.nav-item
-            %a.nav-link{:href => "#{root_path}"} Videos  
+            %a.nav-link{:href => "#{word_path(:id => "want")}"} Vocabulario
+          -# %li.nav-item
+          -#   %a.nav-link{:href => "#{root_path}"} Gramatica
+          -# %li.nav-item
+          -#   %a.nav-link{:href => "#{root_path}"} Tracductor
+          -# %li.nav-item
+          -#   %a.nav-link{:href => "#{root_path}"} Videos  
+        %ul.navbar-nav.ml-auto
+          - if user_signed_in?
+            %a.nav-link{:href => "#{addWord_word_path(0)}"} Add Word
+            %a.nav-link{:href => "#{destroy_user_session_path}"} Edit Word
+            %a.nav-link{:href => "#{destroy_user_session_path}"} Sign Out
+          - else
+            %a.nav-link{:href => "#{new_user_session_path}"} Sign In
+          -# %a.nav-link{:href => "#{root_path}", :method => :delete} 
     = yield
 
 

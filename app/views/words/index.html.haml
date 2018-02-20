@@ -1,1 +1,16 @@
-%p Welcome!
+%p Welcome! Choose a letter for the dictionary
+
+
+
+%a.square{:href => "#{word_path(:id => "All")}", :id => "All"}
+	%div.squareText
+		All
+
+
+- alpha = ('A'..'Z').to_a
+- alpha.each do |letter|
+	%a.square{:href => "#{word_path(:id => "#{letter}")}", :id => "#{letter}"}
+		%div.squareText
+			#{letter}
+		-# %div.squareText
+		-# 	#{letter}
