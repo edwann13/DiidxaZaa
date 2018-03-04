@@ -14,8 +14,8 @@ gem 'rails', '~> 5.1.3.rc2'
 # gem 'sqlite3'
 # gem 'pg'
 
-gem 'webpacker'
-gem 'react-rails'
+# gem 'webpacker'
+# gem 'react-rails'
 
 gem 'devise'
 
