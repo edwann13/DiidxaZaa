@@ -28,7 +28,8 @@
         %ul.navbar-nav.ml-auto
           - if user_signed_in?
             %a.nav-link{:href => "#{addWord_word_path(0)}"} Add Word
-            %a.nav-link{:href => "#{destroy_user_session_path}"} Edit Word
+            %a.nav-link{:href => "#{word_path(:id => "All")}"} Edit Word
+            %a.nav-link{:href => "#{activateUsers_path}"} Admin
             %a.nav-link{:href => "#{destroy_user_session_path}"} Sign Out
           - else
             %a.nav-link{:href => "#{new_user_session_path}"} Sign In

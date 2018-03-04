@@ -1,0 +1,7 @@
+%div.update
+	- word = @word
+	= simple_form_for :word do |f|
+		= f.input :spanish, :input_html => { :value => "#{word.spanish}"}
+		= f.input :zapoteco, :input_html => { :value => "#{word.zapoteco}"}
+		= f.input :word, label: 'English', :input_html => { :value => "#{word.word}"}
+		= f.submit "Update Word"

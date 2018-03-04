@@ -1,0 +1,18 @@
+- @users.each do |user|
+	%div.row
+		%div.col-md-8
+			%p 
+			email: #{user.email} 
+			#{link_to "Edit user status", userConfig_word_path(user.id)}
+
+			%p User activated: #{user.activated}
+
+
+
+-# - @word= Word.find(1)
+-# - word = @word
+-# = simple_form_for @word, url: root_path, method: :get do |f|
+-# 	= f.input :spanish, :input_html => { :value => "#{word.spanish}"}
+-# 	= f.input :zapoteco, :input_html => { :value => "#{word.zapoteco}"}
+-# 	= f.input :word, label: 'English', :input_html => { :value => "#{word.word}"}
+-# 	= f.submit "Update Word"

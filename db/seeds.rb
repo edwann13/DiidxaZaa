@@ -40,7 +40,12 @@
 		, {word: 'Zoo',spanish: "spanish888", zapoteco: "abati', gabati'",category: "Anatomy" }\
 		]);
 
-	User.create([
-		{email: "user@gmail.com", encrypted_password: "password"
+	User.create!([
+		{email: "user@gmail.com", password: "password", reset_password_token: nil, \
+			remember_created_at: nil, current_sign_in_at: nil, last_sign_in_at: nil, \
+			current_sign_in_ip: nil, last_sign_in_ip: nil, activated: true
 
 		}]);
+
+
+

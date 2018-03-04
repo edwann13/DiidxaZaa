@@ -17,16 +17,18 @@
 -# 				= submit_tag("Add New word")
 
 %div.update
-	= simple_form_for @word, url: '/words/create', method: :post do |f|
-		= f.input :word, label: 'English', :input_html => { :value => "Email"}
-		= f.input :spanish, label: 'Spanish', :input_html => { :value => "Email"}
-		= f.input :zapoteco, label: 'Zapoteco', :input_html => { :value => "Email"}
+	%p
+	Add a word!
+	= simple_form_for :word, url: '/words/create', method: :post do |f|
+		= f.input :word, label: 'English', :input_html => { :value => "Please Enter Word"}, :required => false
+		= f.input :spanish, label: 'Spanish', :input_html => { :value => "Please Enter Word"}, :required => false
+		= f.input :zapoteco, label: 'Zapoteco', :input_html => { :value => "Please Enter Word"}, :required => false
 		= f.submit "Create New Word"
 
-%div.update
-	- word = Word.find(1)
-	= simple_form_for @word, url: root_path, method: :get do |f|
-		= f.input :spanish, :input_html => { :value => "#{word.spanish}"}
-		= f.input :zapoteco, :input_html => { :value => "#{word.zapoteco}"}
-		= f.input :word, label: 'English', :input_html => { :value => "#{word.word}"}
-		= f.submit "Update Word"
+-# %div.update
+	
+-# 	= simple_form_for :word, url: root_path, method: :get do |f|
+-# 		= f.input :spanish, :input_html => { :value => "#{word.spanish}"}
+-# 		= f.input :zapoteco, :input_html => { :value => "#{word.zapoteco}"}
+-# 		= f.input :word, label: 'English', :input_html => { :value => "#{word.word}"}
+-# 		= f.submit "Update Word"

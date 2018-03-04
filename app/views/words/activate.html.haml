@@ -1,0 +1,10 @@
+-# - user = @user
+
+%div.row
+	%div.col-md-2
+		%p hello
+	%div.col-md-8
+		= simple_form_for :user do |f|
+			= f.input :activated, as: :radio_buttons, collection: [true, false]
+			= f.button :submit
+
