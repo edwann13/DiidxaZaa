@@ -1,0 +1,170 @@
+Searching 18529 files for "webpacker"
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/Gemfile:
+   15  # gem 'pg'
+   16  
+   17: # gem 'webpacker'
+   18  # gem 'react-rails'
+   19  
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/package.json:
+    3    "private": true,
+    4    "dependencies": {
+    5:     "@rails/webpacker": "^3.2.0",
+    6      "babel-preset-react": "^6.24.1",
+    7      "coffeescript": "1.12.7",
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/yarn.lock:
+    3  
+    4  
+    5: "@rails/webpacker@^3.2.0":
+    6    version "3.2.0"
+    7:   resolved "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-3.2.0.tgz#e9e98a4da4a3e09441c71d2cbd66461659971055"
+    8    dependencies:
+    9      babel-core "^6.26.0"
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/config/environments/development.rb:
+    1  Rails.application.configure do
+    2      # Verifies that versions and hashed value of the package contents in the project's package.json
+    3:   config.webpacker.check_yarn_integrity = true
+    4  
+    5    # Settings specified here will take precedence over those in config/application.rb.
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/config/environments/production.rb:
+    1  Rails.application.configure do
+    2      # Verifies that versions and hashed value of the package contents in the project's package.json
+    3:   config.webpacker.check_yarn_integrity = false
+    4  
+    5    # Settings specified here will take precedence over those in config/application.rb.
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/log/development.log:
+    <binary>
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/log/test.log:
+    <binary>
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/node_modules/.yarn-integrity:
+    3    "linkedModules": [],
+    4    "topLevelPatters": [
+    5:     "@rails/webpacker@^3.2.0",
+    6      "babel-preset-react@^6.24.1",
+    7      "coffeescript@1.12.7",
+    .
+   14    ],
+   15    "lockfileEntries": {
+   16:     "@rails/webpacker@^3.2.0": "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-3.2.0.tgz#e9e98a4da4a3e09441c71d2cbd66461659971055",
+   17      "@std/esm@^0.16.0": "https://registry.yarnpkg.com/@std/esm/-/esm-0.16.0.tgz#2a7a33ecb7f1701cebd4c87df6d0d945ed51f730",
+   18      "abbrev@1": "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8",
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/node_modules/.bin/webpack:
+    ERROR: Unable to open file
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/node_modules/.bin/webpack-dev-server:
+    ERROR: Unable to open file
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/node_modules/babel-loader/node_modules/.bin/webpack:
+    ERROR: Unable to open file
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/node_modules/compression-webpack-plugin/node_modules/.bin/webpack:
+    ERROR: Unable to open file
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/node_modules/extract-text-webpack-plugin/node_modules/.bin/webpack:
+    ERROR: Unable to open file
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/node_modules/file-loader/node_modules/.bin/webpack:
+    ERROR: Unable to open file
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/node_modules/react_ujs/CHANGELOG.md:
+   22  
+   23  #### New Features
+   24: - Webpacker gets ES6 components by default #822
+   25  - ReactDOM.hydrate() #828
+   26  - Documentation updates #830
+   ..
+   29  
+   30  #### Bug Fixes
+   31: - Webpacker local manifest sometimes had double asset_hosts if the dev server was running #834 thanks @joeyparis
+   32  
+   33  ## 2.4.0
+   ..
+   68  #### New Features
+   69  
+   70: - Webpacker and Webpack 3 support #777
+   71  - Update to React 15.6.2 #789
+   72  
+   ..
+   84  
+   85  - Fix Railtie watcher to update its timestamp when files change #722
+   86: - Don't use `yarn` binstub because webpacker doesn't provide it anymore #717
+   87  
+   88  ## 2.2.0
+   ..
+  132  #### New Features
+  133  
+  134: - Webpacker support:
+  135    - `react_component` can find components via `require.context` + `ReactRailsUJS.useContext` #678
+  136:   - Server rendering detects Webpacker and uses packs #683, #687
+  137    - `ReactRailsUJS` is available from `npm` with `yarn add react_ujs` or `npm install react_ujs` #678
+  138  - `per_request_react_rails_prerenderer` Allows you to check out a renderer for the _whole request_ instead of once-per-`react_component` #559
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/node_modules/react_ujs/README.md:
+   10  React-Rails is a flexible tool to use [React](http://facebook.github.io/react/) with Rails. It:
+   11  * Automatically renders React server-side and client-side
+   12: * Supports Webpacker 3.x, 2.x, 1.1+
+   13  * Supports Sprockets 4.x, 3.x, 2.x
+   14  * Lets you use [JSX](http://facebook.github.io/react/docs/jsx-in-depth.html), [ES6](http://es6-features.org/), [Coffeescript](http://coffeescript.org/)
+   ..
+   20  ## Contents
+   21  
+   22: - [Get started with Webpacker](#get-started-with-webpacker)
+   23    - [File naming](#file-naming)
+   24  - [Use with Asset Pipeline](#use-with-asset-pipeline)
+   ..
+   52  
+   53  
+   54: ## Get started with Webpacker
+   55  
+   56  [or Get started with Sprockets](#use-with-asset-pipeline)
+   57  
+   58: [Webpacker](https://github.com/rails/webpacker) integrates modern JS tooling with Rails.
+   59  
+   60: Add `webpacker` and `react-rails` to your gemfile and run the installers:
+   61  
+   62  ```
+   63  $ bundle install
+   64: $ rails webpacker:install
+   65: $ rails webpacker:install:react
+   66  $ rails generate react:install
+   67  ```
+   ..
+  294  
+  295  - On the asset pipeline, it looks up `className` in the global namespace.
+  296: - On Webpacker, it `require`s files and accesses named exports, as described in [Use with Webpacker](#use-with-webpacker).
+  297  
+  298  You can override this function to customize the mapping of name-to-constructor. [Server-side rendering](#server-side-rendering) also uses this function.
+  ...
+  524  For the vast majority of cases this will get you most of the migration:
+  525  - global find+replace `React.Prop` -> `Prop`
+  526: - add `import PropTypes from 'prop-types'` (Webpacker only)
+  527: - re-run `bundle exec rails webpacker:install:react` to update npm packages (Webpacker only)
+  528  
+  529  ## Related Projects
+  530  
+  531: - [webpacker-react](https://github.com/renchap/webpacker-react): Integration of React with Rails utilizing Webpack with Hot Module Replacement (HMR).
+  532  - [The Free React on Rails Course](https://learnetto.com/users/hrishio/courses/the-free-react-on-rails-5-course) A free video course which teaches the basics of React and how to get started using it in Rails with `react-rails`.
+  533  - [react\_on\_rails](https://github.com/shakacode/react_on_rails): Integration of React with Rails utilizing Webpack, Redux, React-Router.
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/node_modules/sass-loader/node_modules/.bin/webpack:
+    ERROR: Unable to open file
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/node_modules/uglifyjs-webpack-plugin/node_modules/.bin/webpack:
+    ERROR: Unable to open file
+
+/Users/developer/Desktop/untitled folder/DiidxaZaa/public/packs-test/application-013b62acf0b30a881c2c.js:
+ 26042  // layout file, like app/views/layouts/application.html.erb
+ 26043  
+ 26044: console.log('Hello World from Webpacker');
+ 26045  // Support component names relative to this directory:
+ 26046  var componentRequireContext = __webpack_require__(47);
+
+455 matches across 11 files
