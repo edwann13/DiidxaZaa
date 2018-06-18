@@ -1,0 +1,37 @@
+%div.container.rounded
+  - arr = @list.to_a
+  - @list.each do |word|
+    %div.row
+      %div.col-6.col-sm-3.hello1.top-buffer.roundLeft{:id => "hello"}
+        / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+        %a.text{:href => "#{carousel_set_words_path(word.word)}" }
+          / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+          %p.hello1 #{word.word}
+      %div.col-6.col-sm-5.hello2.top-buffer.roundCenter
+        %p.hello2 #{word.showWord(word, @lang)}
+        / %p.hello2 #{word.spanish}
+        / %p.zapo #{word.zapoteco}
+      
+      %div.col-12.col-sm-4.top-buffer.roundRight.sampleImage
+        = image_tag "sample.png", 'class' => "imageDef"
+    %div.row
+      %div.col-6
+        %button.btn.btn-primary{"data-target" => "#exampleModal", "data-toggle" => "modal", :type => "button"}
+          Launch demo modal
+        / Modal
+
+        
+        #exampleModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+          .modal-dialog{:role => "document"}
+            .modal-content
+              .modal-header
+                %h5#exampleModalLabel.modal-title Modal title
+                %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+                  %span{"aria-hidden" => "true"} ×
+              .modal-body
+                = image_tag "sample.png", 'class' => "imageDef"
+              .modal-footer
+                %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
+                %button.btn.btn-primary{:type => "button"} Save changes
+
+%i.glyphicon.glyphicon-indent-right

@@ -18130,3 +18130,2544 @@ Processing by WordsController#show as HTML
 Completed 200 OK in 71ms (Views: 67.1ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2018-06-11 11:16:03 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 397ms (Views: 389.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:16:05 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/show" for ::1 at 2018-06-11 11:16:10 -0700
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (48.0ms)
+Completed 200 OK in 122ms (Views: 114.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:16:10 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:16:11 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:16:11 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/show" for ::1 at 2018-06-11 11:16:12 -0700
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (58.0ms)
+Completed 200 OK in 100ms (Views: 96.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:16:12 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:16:13 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:25:20 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 317ms (Views: 308.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:27:31 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:29:56 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:33:12 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 68ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:34:11 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 80ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:34:45 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 2806ms (Views: 2803.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:35:22 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 61ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:35:24 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:35:33 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:36:55 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:40:20 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-11 11:42:24 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 50ms (Views: 48.1ms)
+
+
+Started GET "/allWords" for ::1 at 2018-06-11 11:44:08 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/allWords"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/allWords" for ::1 at 2018-06-11 11:44:28 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/allWords"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:45:00 -0700
+Processing by WordsController#allWords as HTML
+Completed 406 Not Acceptable in 60ms
+
+
+  
+ActionController::UnknownFormat (WordsController#allWords is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:45:56 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 66ms (Views: 59.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:46:19 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 49.3ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:46:39 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 16ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3: 
+    4: %div.container.rounded
+    5:   - arr = @list.to_a
+    6:   - @list.each do |word|
+    7:     %div.row
+    8:       %div.col-md-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    9:         / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+  
+app/views/words/allWords.html.haml:6:in `_app_views_words_all_ords_html_haml__3258572825857768454_70172930841380'
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:47:10 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.2ms)
+Completed 200 OK in 62ms (Views: 56.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:47:49 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (23.9ms)
+Completed 200 OK in 64ms (Views: 61.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:50:48 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.5ms)
+Completed 200 OK in 2316ms (Views: 2310.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:50:52 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.6ms)
+Completed 200 OK in 71ms (Views: 68.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:50:59 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.5ms)
+Completed 200 OK in 2314ms (Views: 2310.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:52:03 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.8ms)
+Completed 200 OK in 2243ms (Views: 2239.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:52:39 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (35.2ms)
+Completed 500 Internal Server Error in 870ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...(110, 211, 207)": expected ")", was ";"):
+    4:     %title>Diidxazaa
+    5:     = csrf_meta_tags
+    6: 
+    7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    9: 
+   10:   %body
+  
+app/assets/stylesheets/words.scss:12
+app/assets/stylesheets/application.scss:3
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml__941032434399249481_70172981431600'
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:52:48 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (42.1ms)
+Completed 200 OK in 2211ms (Views: 2206.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:53:54 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (36.2ms)
+Completed 200 OK in 2407ms (Views: 2401.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:54:28 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (39.1ms)
+Completed 200 OK in 2189ms (Views: 2185.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:54:55 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.7ms)
+Completed 200 OK in 2359ms (Views: 2355.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 11:55:11 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.4ms)
+Completed 200 OK in 68ms (Views: 65.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:04:47 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (29.8ms)
+Completed 200 OK in 2700ms (Views: 2696.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:04:52 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.9ms)
+Completed 200 OK in 67ms (Views: 62.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:05:35 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.8ms)
+Completed 200 OK in 2280ms (Views: 2275.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:06:28 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (29.8ms)
+Completed 200 OK in 75ms (Views: 70.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:15:06 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.3ms)
+Completed 200 OK in 2729ms (Views: 2725.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:15:23 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.9ms)
+Completed 200 OK in 1993ms (Views: 1989.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:15:40 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.3ms)
+Completed 200 OK in 2313ms (Views: 2309.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:16:01 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.1ms)
+Completed 200 OK in 66ms (Views: 62.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:16:21 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.3ms)
+Completed 200 OK in 2250ms (Views: 2247.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:16:42 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.7ms)
+Completed 200 OK in 2262ms (Views: 2258.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:17:45 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.8ms)
+Completed 200 OK in 2356ms (Views: 2350.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:18:14 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.6ms)
+Completed 200 OK in 2324ms (Views: 2319.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:18:33 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.7ms)
+Completed 500 Internal Server Error in 764ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
+    4:     %title>Diidxazaa
+    5:     = csrf_meta_tags
+    6: 
+    7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    9: 
+   10:   %body
+  
+app/assets/stylesheets/words.scss:96
+app/assets/stylesheets/application.scss:3
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml__941032434399249481_70172955868200'
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:19:10 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (27.0ms)
+Completed 200 OK in 2278ms (Views: 2274.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:19:39 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (47.8ms)
+Completed 200 OK in 2442ms (Views: 2438.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:21:20 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (36.7ms)
+Completed 200 OK in 2306ms (Views: 2302.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:21:37 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.2ms)
+Completed 200 OK in 2155ms (Views: 2151.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:22:34 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (43.3ms)
+Completed 200 OK in 1975ms (Views: 1971.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:26:04 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.2ms)
+Completed 200 OK in 81ms (Views: 77.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:26:25 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.8ms)
+Completed 200 OK in 81ms (Views: 77.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:26:48 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.9ms)
+Completed 200 OK in 73ms (Views: 69.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:27:27 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.6ms)
+Completed 200 OK in 63ms (Views: 59.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:27:56 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (25.7ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:28:57 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (27.5ms)
+Completed 200 OK in 2437ms (Views: 2434.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:33:36 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.9ms)
+Completed 200 OK in 2262ms (Views: 2258.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:33:55 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (36.9ms)
+Completed 200 OK in 2291ms (Views: 2286.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:34:32 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.4ms)
+Completed 200 OK in 2294ms (Views: 2289.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:35:10 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (39.2ms)
+Completed 200 OK in 2321ms (Views: 2316.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:35:20 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.3ms)
+Completed 200 OK in 2189ms (Views: 2185.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:35:38 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.2ms)
+Completed 200 OK in 73ms (Views: 69.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:35:50 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.9ms)
+Completed 200 OK in 72ms (Views: 69.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:35:58 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 2275ms (Views: 2272.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:36:12 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (33.9ms)
+Completed 200 OK in 2168ms (Views: 2164.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:36:33 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (35.1ms)
+Completed 200 OK in 2335ms (Views: 2331.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:36:45 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (25.7ms)
+Completed 200 OK in 2141ms (Views: 2138.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-11 12:37:02 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.7ms)
+Completed 200 OK in 2314ms (Views: 2310.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:21:43 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (45.1ms)
+Completed 200 OK in 198ms (Views: 178.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:23:02 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 2478ms (Views: 2475.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:23:38 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 2370ms (Views: 2365.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:23:48 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 48ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:24:54 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 2082ms (Views: 2079.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:26:13 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 2317ms (Views: 2314.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:39:50 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (8.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (39.4ms)
+Completed 200 OK in 88ms (Views: 77.3ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:40:03 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (27.8ms)
+Completed 200 OK in 74ms (Views: 70.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:40:06 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (24.2ms)
+Completed 200 OK in 61ms (Views: 57.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:40:28 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (40.1ms)
+Completed 200 OK in 81ms (Views: 77.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:40:31 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.4ms)
+Completed 200 OK in 68ms (Views: 65.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:40:59 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (27.5ms)
+Completed 200 OK in 64ms (Views: 61.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:41:27 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.5ms)
+Completed 200 OK in 77ms (Views: 73.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:41:29 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 66ms (Views: 63.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:41:42 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.4ms)
+Completed 200 OK in 72ms (Views: 66.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:44:37 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.6ms)
+Completed 200 OK in 73ms (Views: 68.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:45:12 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (29.4ms)
+Completed 200 OK in 65ms (Views: 62.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:45:14 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.9ms)
+Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:47:03 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 6 spaces used for indentation, but the rest of the document was indented using 4 spaces.):
+    1: %div.container.rounded
+    2:     %div.row
+    3:       %div.col-xs-2.col-sm-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    4:         / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+    5:         %a.text{:href => "#" }
+    6:           / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+  
+app/views/words/allWords.html.haml:3
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:47:56 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "    \t" used for indentation, but the rest of the document was indented using 4 spaces.):
+    1: %div.container.rounded
+    2:     %div.row
+    3:     	%div.col-xs-2.col-sm-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    4:         / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+    5:         	%a.text{:href => "#" }
+    6:           / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+  
+app/views/words/allWords.html.haml:3
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:48:11 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 8 spaces used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %div.container.rounded
+    2: 	%div.row
+    3: 		%div.col-xs-2.col-sm-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    4:         / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+    5:         	%a.text{:href => "#" }
+    6:           / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+    7:           		%p.hello1 word 1
+  
+app/views/words/allWords.html.haml:4
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:48:37 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "        \t" used for indentation, but the rest of the document was indented using 1 tab.):
+    1: %div.container.rounded
+    2: 	%div.row
+    3: 		%div.col-xs-2.col-sm-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    4:         	%a.text{:href => "#" }
+    5:           		%p.hello1 word 1
+    6:         %div.col-xs-2.col-sm-5.hello2.top-buffer.roundCenter
+    7:         	%p.hello2 word 2
+  
+app/views/words/allWords.html.haml:4
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:48:53 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: "          \t\t" used for indentation, but the rest of the document was indented using 1 tab.):
+    2: 	%div.row
+    3: 		%div.col-xs-2.col-sm-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    4: 			%a.text{:href => "#" }
+    5:           		%p.hello1 word 1
+    6:         %div.col-xs-2.col-sm-5.hello2.top-buffer.roundCenter
+    7:         	%p.hello2 word 2
+    8:         %div.col-xs-8.col-sm-4.top-buffer.roundRight.sampleImage
+  
+app/views/words/allWords.html.haml:5
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:49:01 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 8 spaces used for indentation, but the rest of the document was indented using 1 tab.):
+    3: 		%div.col-xs-2.col-sm-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    4: 			%a.text{:href => "#" }
+    5: 				%p.hello1 word 1
+    6:         %div.col-xs-2.col-sm-5.hello2.top-buffer.roundCenter
+    7:         	%p.hello2 word 2
+    8:         %div.col-xs-8.col-sm-4.top-buffer.roundRight.sampleImage
+    9:         	= image_tag "sample.png"
+  
+app/views/words/allWords.html.haml:6
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:49:24 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 8 spaces used for indentation, but the rest of the document was indented using 1 tab.):
+    3: 		%div.col-xs-2.col-sm-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    4: 			%a.text{:href => "#" }
+    5: 				%p.hello1 word 1
+    6:         %div.col-xs-2.col-sm-5.hello2.top-buffer.roundCenter
+    7:         	%p.hello2 word 2
+    8:         %div.col-xs-8.col-sm-4.top-buffer.roundRight.sampleImage
+    9:         	= image_tag "sample.png"
+  
+app/views/words/allWords.html.haml:6
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:50:36 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 62ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:51:13 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 2432ms (Views: 2429.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:51:48 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 50ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:52:29 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:55:42 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 72ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:55:47 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:56:53 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 49ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 11:56:54 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 50ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-12 12:00:32 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 66ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-06-12 12:00:50 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:01:00 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.6ms)
+Completed 200 OK in 71ms (Views: 66.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:02:06 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.5ms)
+Completed 200 OK in 2456ms (Views: 2450.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:02:50 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (24.9ms)
+Completed 200 OK in 2232ms (Views: 2228.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:08:51 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 67ms (Views: 63.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:48:01 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (4.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (50.8ms)
+Completed 200 OK in 187ms (Views: 170.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:48:22 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (2.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 104ms (Views: 95.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:49:37 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (20.9ms)
+Completed 200 OK in 86ms (Views: 81.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/words/carousel/brain" for ::1 at 2018-06-12 12:50:15 -0700
+Processing by WordsController#carousel as HTML
+  Parameters: {"data"=>"brain"}
+  Rendering words/carousel.html.haml within layouts/application
+  Rendered words/carousel.html.haml within layouts/application (17.3ms)
+Completed 200 OK in 68ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/carousel/app/assets/stylesheets/application.scss" for ::1 at 2018-06-12 12:50:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/words/carousel/app/assets/stylesheets/application.scss"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:50:19 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (2.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 65ms (Views: 60.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:54:19 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (13.6ms)
+Completed 200 OK in 73ms (Views: 70.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:54:40 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (13.2ms)
+Completed 200 OK in 60ms (Views: 57.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:54:41 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 59ms (Views: 55.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/carousel/brain" for ::1 at 2018-06-12 12:54:42 -0700
+Processing by WordsController#carousel as HTML
+  Parameters: {"data"=>"brain"}
+  Rendering words/carousel.html.haml within layouts/application
+  Rendered words/carousel.html.haml within layouts/application (24.3ms)
+Completed 200 OK in 81ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/carousel/app/assets/stylesheets/application.scss" for ::1 at 2018-06-12 12:54:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/words/carousel/app/assets/stylesheets/application.scss"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/developer/.rbenv/versions/2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:54:49 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 61ms (Views: 56.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:55:23 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 2506ms (Views: 2501.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:59:26 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 2498ms (Views: 2492.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 12:59:35 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 2939ms (Views: 2935.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 13:02:13 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 73ms (Views: 70.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2018-06-12 20:19:06 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 111ms (Views: 103.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:19:13 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (2.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (81.7ms)
+Completed 200 OK in 325ms (Views: 317.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:23:59 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:25:08 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 2330ms (Views: 2327.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:25:59 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 2228ms (Views: 2225.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:26:31 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 2125ms (Views: 2121.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:26:45 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (17.0ms)
+Completed 200 OK in 2265ms (Views: 2260.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:27:21 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 2250ms (Views: 2247.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:27:45 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (23.5ms)
+Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:28:33 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (24.7ms)
+Completed 200 OK in 61ms (Views: 58.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:29:21 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/developer/Desktop/summerWork/DiidxaZaa/app/views/words/allWords.html.haml:16: syntax error, unexpected =>, expecting '}'
+...html_escape((( image_tag{'id'=> 'imageDef'} "sample.png"
+...                               ^
+/Users/developer/Desktop/summerWork/DiidxaZaa/app/views/words/allWords.html.haml:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+... image_tag{'id'=> 'imageDef'} "sample.png"
+...                               ^):
+  
+app/views/words/allWords.html.haml:16: syntax error, unexpected =>, expecting '}'
+app/views/words/allWords.html.haml:16: syntax error, unexpected tSTRING_BEG, expecting ')'
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:29:52 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.3ms)
+Completed 200 OK in 69ms (Views: 65.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:31:23 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:31:45 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.5ms)
+Completed 200 OK in 2151ms (Views: 2147.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:32:02 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (23.4ms)
+Completed 200 OK in 2214ms (Views: 2210.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:32:40 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (25.4ms)
+Completed 200 OK in 2120ms (Views: 2116.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:32:56 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (33.9ms)
+Completed 200 OK in 77ms (Views: 73.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:34:21 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (24.5ms)
+Completed 200 OK in 3159ms (Views: 3156.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:35:30 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (21.4ms)
+Completed 200 OK in 2842ms (Views: 2838.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:40:05 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (33.5ms)
+Completed 200 OK in 2676ms (Views: 2672.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:43:48 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.2ms)
+Completed 200 OK in 81ms (Views: 76.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:43:50 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.1ms)
+Completed 200 OK in 62ms (Views: 58.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:44:49 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (25.5ms)
+Completed 200 OK in 71ms (Views: 68.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:54:35 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.2ms)
+Completed 200 OK in 83ms (Views: 79.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:54:38 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.0ms)
+Completed 200 OK in 78ms (Views: 72.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:54:57 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (29.4ms)
+Completed 200 OK in 2492ms (Views: 2489.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:55:12 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.9ms)
+Completed 200 OK in 87ms (Views: 83.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:55:25 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.2ms)
+Completed 200 OK in 2299ms (Views: 2296.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:58:23 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (24.9ms)
+Completed 200 OK in 2368ms (Views: 2364.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:59:09 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (40.3ms)
+Completed 200 OK in 2135ms (Views: 2129.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 20:59:35 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.4ms)
+Completed 200 OK in 67ms (Views: 64.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:03:57 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.0ms)
+Completed 200 OK in 2349ms (Views: 2345.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:04:08 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 2460ms (Views: 2457.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:04:21 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (29.6ms)
+Completed 200 OK in 2175ms (Views: 2171.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:04:59 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (27.4ms)
+Completed 200 OK in 2263ms (Views: 2260.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:05:30 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (25.9ms)
+Completed 200 OK in 2160ms (Views: 2156.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:05:43 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (34.8ms)
+Completed 200 OK in 2331ms (Views: 2328.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:05:50 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.1ms)
+Completed 200 OK in 2221ms (Views: 2217.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:06:12 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (37.4ms)
+Completed 200 OK in 85ms (Views: 80.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:06:16 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (35.5ms)
+Completed 200 OK in 82ms (Views: 78.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:06:49 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (29.9ms)
+Completed 200 OK in 2266ms (Views: 2262.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:09:39 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (50.6ms)
+Completed 200 OK in 2209ms (Views: 2205.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:09:57 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.9ms)
+Completed 200 OK in 62ms (Views: 59.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:10:17 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 2284ms (Views: 2280.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:11:32 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.8ms)
+Completed 200 OK in 2266ms (Views: 2262.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:11:54 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.6ms)
+Completed 200 OK in 2910ms (Views: 2906.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:12:25 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.7ms)
+Completed 200 OK in 2623ms (Views: 2619.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:12:45 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.6ms)
+Completed 200 OK in 2325ms (Views: 2322.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:13:14 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.7ms)
+Completed 200 OK in 2264ms (Views: 2259.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:13:44 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (34.0ms)
+Completed 200 OK in 2312ms (Views: 2309.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:14:11 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (27.4ms)
+Completed 200 OK in 62ms (Views: 59.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:14:17 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.8ms)
+Completed 200 OK in 78ms (Views: 75.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:14:34 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.5ms)
+Completed 200 OK in 65ms (Views: 61.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:15:50 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.4ms)
+Completed 200 OK in 2394ms (Views: 2390.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:16:04 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.5ms)
+Completed 200 OK in 2193ms (Views: 2189.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:17:02 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (27.9ms)
+Completed 200 OK in 2334ms (Views: 2330.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:18:58 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (33.3ms)
+Completed 200 OK in 2469ms (Views: 2463.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:20:12 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.6ms)
+Completed 200 OK in 2487ms (Views: 2481.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:25:42 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.6ms)
+Completed 200 OK in 2476ms (Views: 2471.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:26:33 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (33.2ms)
+Completed 200 OK in 2545ms (Views: 2540.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:28:27 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.3ms)
+Completed 200 OK in 2228ms (Views: 2222.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-12 21:37:29 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (36.4ms)
+Completed 200 OK in 81ms (Views: 76.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2018-06-13 16:47:11 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 1004ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "}": expected selector or at-rule, was "}"):
+    4:     %title>Diidxazaa
+    5:     = csrf_meta_tags
+    6:     <meta name="viewport" content="width=1024">
+    7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    9: 
+   10:   %body
+  
+app/assets/stylesheets/words.scss:48
+app/assets/stylesheets/application.scss:3
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml__391189417150058534_70173937256200'
+Started GET "/" for ::1 at 2018-06-13 16:47:23 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 620ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""):
+    4:     %title>Diidxazaa
+    5:     = csrf_meta_tags
+    6:     <meta name="viewport" content="width=1024">
+    7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    9: 
+   10:   %body
+  
+app/assets/stylesheets/words.scss:174
+app/assets/stylesheets/application.scss:3
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml__391189417150058534_70173917768580'
+Started GET "/" for ::1 at 2018-06-13 16:48:08 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 3012ms (Views: 3009.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 16:48:15 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (40.7ms)
+Completed 200 OK in 85ms (Views: 73.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 16:48:39 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (29.8ms)
+Completed 200 OK in 2412ms (Views: 2408.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 16:49:06 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 2491ms (Views: 2487.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 16:49:10 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (33.9ms)
+Completed 200 OK in 73ms (Views: 69.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 16:49:29 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.4ms)
+Completed 200 OK in 2261ms (Views: 2256.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 16:51:22 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.4ms)
+Completed 200 OK in 2401ms (Views: 2397.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 16:51:55 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.8ms)
+Completed 200 OK in 2115ms (Views: 2111.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 16:52:28 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.9ms)
+Completed 200 OK in 2408ms (Views: 2405.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:14:01 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.5ms)
+Completed 200 OK in 2360ms (Views: 2356.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:14:39 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (33.8ms)
+Completed 200 OK in 2618ms (Views: 2613.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:16:49 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (29.4ms)
+Completed 200 OK in 2092ms (Views: 2089.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:17:10 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 2379ms (Views: 2376.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:17:27 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (37.0ms)
+Completed 200 OK in 2093ms (Views: 2088.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:17:58 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (36.8ms)
+Completed 200 OK in 2286ms (Views: 2282.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:18:29 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.0ms)
+Completed 200 OK in 2284ms (Views: 2281.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:18:46 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.7ms)
+Completed 200 OK in 2251ms (Views: 2247.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:19:38 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (33.3ms)
+Completed 200 OK in 2140ms (Views: 2135.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:21:33 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (29.6ms)
+Completed 200 OK in 2662ms (Views: 2658.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:21:47 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (36.3ms)
+Completed 200 OK in 2133ms (Views: 2129.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:22:42 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (35.7ms)
+Completed 200 OK in 2357ms (Views: 2354.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:22:57 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.6ms)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:24:15 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (27.6ms)
+Completed 200 OK in 2302ms (Views: 2298.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:25:53 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.4ms)
+Completed 200 OK in 2249ms (Views: 2245.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:29:47 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.5ms)
+Completed 200 OK in 2285ms (Views: 2281.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 20:37:01 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (35.8ms)
+Completed 200 OK in 2445ms (Views: 2442.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 21:17:23 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (2.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (124.8ms)
+Completed 200 OK in 230ms (Views: 215.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-13 21:19:22 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.8ms)
+Completed 200 OK in 86ms (Views: 82.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-14 13:47:57 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (10.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (172.2ms)
+Completed 200 OK in 3166ms (Views: 286.5ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:21:02 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (11.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (159.1ms)
+Completed 200 OK in 321ms (Views: 292.7ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:21:56 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (40.3ms)
+Completed 200 OK in 2619ms (Views: 2614.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:22:42 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (34.6ms)
+Completed 200 OK in 2198ms (Views: 2194.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:23:46 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.7ms)
+Completed 200 OK in 2114ms (Views: 2110.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:24:23 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (34.8ms)
+Completed 200 OK in 2369ms (Views: 2364.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:24:56 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (37.7ms)
+Completed 200 OK in 2662ms (Views: 2658.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:25:08 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (34.4ms)
+Completed 200 OK in 2240ms (Views: 2236.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:25:55 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.8ms)
+Completed 200 OK in 2426ms (Views: 2421.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:26:51 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (34.7ms)
+Completed 200 OK in 2152ms (Views: 2149.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:27:44 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (25.9ms)
+Completed 200 OK in 2310ms (Views: 2307.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:28:12 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (38.6ms)
+Completed 200 OK in 2222ms (Views: 2219.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:28:22 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.1ms)
+Completed 200 OK in 2296ms (Views: 2292.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:28:35 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (29.9ms)
+Completed 200 OK in 2058ms (Views: 2054.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:29:23 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (34.9ms)
+Completed 200 OK in 2414ms (Views: 2410.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:29:41 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.8ms)
+Completed 200 OK in 2274ms (Views: 2271.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:30:17 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.1ms)
+Completed 200 OK in 2302ms (Views: 2297.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:31:00 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (24.7ms)
+Completed 200 OK in 2315ms (Views: 2312.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:31:25 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (35.5ms)
+Completed 200 OK in 2435ms (Views: 2431.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:32:08 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.9ms)
+Completed 200 OK in 64ms (Views: 61.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:33:34 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (30.2ms)
+Completed 200 OK in 2342ms (Views: 2339.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:33:56 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (33.1ms)
+Completed 200 OK in 2188ms (Views: 2184.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:34:18 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (31.2ms)
+Completed 200 OK in 2284ms (Views: 2280.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:34:54 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (35.7ms)
+Completed 200 OK in 2254ms (Views: 2250.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:35:31 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (40.0ms)
+Completed 200 OK in 2352ms (Views: 2347.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:36:07 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.4ms)
+Completed 200 OK in 2162ms (Views: 2158.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:36:29 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (40.9ms)
+Completed 200 OK in 2286ms (Views: 2281.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:37:02 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (39.0ms)
+Completed 200 OK in 2343ms (Views: 2339.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:37:12 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (36.5ms)
+Completed 200 OK in 76ms (Views: 72.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:37:59 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 2419ms (Views: 2415.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:38:36 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (42.2ms)
+Completed 200 OK in 2322ms (Views: 2317.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:39:23 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (32.5ms)
+Completed 200 OK in 2377ms (Views: 2373.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:40:43 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (34.9ms)
+Completed 200 OK in 2362ms (Views: 2359.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:40:50 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (34.2ms)
+Completed 200 OK in 2378ms (Views: 2374.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:41:03 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (28.3ms)
+Completed 200 OK in 2235ms (Views: 2232.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:41:57 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.4ms)
+Completed 200 OK in 2242ms (Views: 2239.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:51:07 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (37.6ms)
+Completed 200 OK in 83ms (Views: 79.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:52:05 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (35.6ms)
+Completed 200 OK in 85ms (Views: 81.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:52:23 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (49.7ms)
+Completed 200 OK in 91ms (Views: 88.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 11:59:58 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (50.1ms)
+Completed 200 OK in 98ms (Views: 94.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:00:09 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.7ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (43.2ms)
+Completed 200 OK in 77ms (Views: 73.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:00:22 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (53.1ms)
+Completed 200 OK in 91ms (Views: 88.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:04:06 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (52.3ms)
+Completed 200 OK in 101ms (Views: 97.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:04:45 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %p and nested within it.):
+    21:         -# / Modal
+    22: 
+    23:         %p hi
+    24:           %span.glyphicon.glyphicon-chevron-down
+    25:         #exampleModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+    26:           .modal-dialog{:role => "document"}
+    27:             .modal-content
+  
+app/views/words/allWords.html.haml:24
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:05:02 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (2.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (46.0ms)
+Completed 200 OK in 87ms (Views: 82.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:05:51 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (45.6ms)
+Completed 200 OK in 86ms (Views: 83.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:06:00 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:06:04 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (47.7ms)
+Completed 200 OK in 86ms (Views: 83.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:06:20 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (2.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (54.2ms)
+Completed 200 OK in 108ms (Views: 101.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:06:27 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (60.4ms)
+Completed 200 OK in 101ms (Views: 98.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:06:39 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (33.2ms)
+Completed 200 OK in 75ms (Views: 71.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:06:51 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (49.9ms)
+Completed 200 OK in 88ms (Views: 85.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:07:54 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (53.9ms)
+Completed 200 OK in 112ms (Views: 109.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:07:55 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (69.7ms)
+Completed 200 OK in 107ms (Views: 104.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:07:56 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (63.2ms)
+Completed 200 OK in 109ms (Views: 106.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:08:00 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (51.5ms)
+Completed 200 OK in 90ms (Views: 86.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:08:57 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.0ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (53.3ms)
+Completed 200 OK in 99ms (Views: 95.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:11:15 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (50.2ms)
+Completed 200 OK in 96ms (Views: 93.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:11:54 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (58.4ms)
+Completed 200 OK in 98ms (Views: 94.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:12:15 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (57.0ms)
+Completed 200 OK in 100ms (Views: 97.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:12:38 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (41.4ms)
+Completed 200 OK in 78ms (Views: 75.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/allWords" for ::1 at 2018-06-18 12:18:30 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (1.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (66.2ms)
+Completed 200 OK in 126ms (Views: 122.4ms | ActiveRecord: 1.1ms)
+
+
