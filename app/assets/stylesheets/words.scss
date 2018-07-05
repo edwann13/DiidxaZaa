@@ -12,6 +12,16 @@ $primary-color: #333;
 // 	height: 45vh;
 // }
 
+.testingModal {
+	background-color: red;
+}
+
+.testingRow {
+	background-color: green;
+}
+
+
+
 // css for the general application
 
 // extra small devices less than or equal to 575px
@@ -30,19 +40,42 @@ $primary-color: #333;
 	}
 
 	.roundCenter {
-		border-radius: 0px 15px 15px 0px;
+		border-radius: 0px 15px 0px 0px;
 	}
 
 	.roundLeft {
-		border-radius: 15px 0px 0px 15px;
+		border-radius: 15px 0px 0px 0px;
 	}
 
+
+	.modalRound {
+	border-radius: 0px 0px 15px 15px;
+	background-color: white;
+	// background-color: red;
+	}
+
+	.imageArrow {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.imageModal {
+		width: auto;
+		height: auto;
+		max-height: 100%;
+		max-width: 100%;
+	}
 }
 
 // small screens
 @media  screen and (max-width : 767px) and (min-width : 577px) {
 	body {
 		background-color: red;
+	}
+
+	.modalRound {
+		display: none;
 	}
 
 	.row div {
@@ -81,9 +114,11 @@ $primary-color: #333;
 
 // medium screens
 @media screen and (min-width : 777px) and (max-width : 991px) {
-
 	body {
 		background-color: purple;
+	}
+	.modalRound {
+		display: none;
 	}
 
 	div.row {
@@ -122,6 +157,10 @@ $primary-color: #333;
 		background-color: orange;
 	}
 
+	.modalRound {
+		display: none;
+	}
+
 
 	div.row {
 		height: 50vh;
@@ -158,6 +197,10 @@ $primary-color: #333;
 @media screen and (min-width : 1200px){
 	body {
 		background-color: green
+	}
+
+	.modalRound {
+		display: none;
 	}
 	
 	div.row {
@@ -227,7 +270,7 @@ $primary-color: #333;
 
 
 body {
-	background-color: rgb(236, 240, 241);
+	// background-color: rgb(236, 240, 241);
 	// padding-top:70px;
 }
 

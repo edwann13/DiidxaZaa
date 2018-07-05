@@ -17,6 +17,7 @@ class WordsController < ApplicationController
 		@lang = session[:lang] || params[:lang] || "spanish"
 
 		@list = Word.all;
+		
 
 	end
 end
