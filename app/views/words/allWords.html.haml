@@ -1,26 +1,34 @@
 %div.container.rounded
   - arr = @list.to_a
   - @list.each do |word|
+
     %div.row
       %div.col-6.col-sm-3.hello1.top-buffer.roundLeft{:id => "hello"}
-        / =link_to "Delete Image", action: "carousel", data: { data: arr} 
-        %a.text{:href => "#{carousel_set_words_path(word.word)}" }
-          / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+        %a.text
           %p.hello1 #{word.word}
       %div.col-6.col-sm-5.hello2.top-buffer.roundCenter
         %p.hello2 #{word.showWord(word, @lang)}
-        / %p.hello2 #{word.spanish}
-        / %p.zapo #{word.zapoteco}
       
+      %div.col-12.modalRound
+        = image_tag "down_arrow.png", "class" => "imageArrow", 'role' => 'button', 'data-target' => '#exampleModal', 'data-toggle' => 'modal', :type => 'button'
+        / %p this is the component for the modal
+
+
+
+
       %div.col-12.col-sm-4.top-buffer.roundRight.sampleImage
         = image_tag "sample.png", 'class' => "imageDef"
+
+    / creating a new row So I can add the arrow or more button to show the modal
+
+    / %div.row.testingRow
+    /   %div.col-12
+    /     %p this is going to be part of the whole word component
+
     %div.row
       %div.col-6
-        %button.btn.btn-primary{"data-target" => "#exampleModal", "data-toggle" => "modal", :type => "button"}
-          Launch demo modal
-        / Modal
 
-        
+        / this is the logic for creating the modal component
         #exampleModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
           .modal-dialog{:role => "document"}
             .modal-content
@@ -29,8 +37,7 @@
                 %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
                   %span{"aria-hidden" => "true"} ×
               .modal-body
-                = image_tag "sample.png", 'class' => "imageDef"
+                = image_tag "sample.png", 'class' => "imageModal"
               .modal-footer
                 %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
-                %button.btn.btn-primary{:type => "button"} Save changes
 
