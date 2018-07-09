@@ -23097,3 +23097,865 @@ Processing by WordsController#index as HTML
 Completed 200 OK in 92ms (Views: 89.4ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:17:19 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (39.9ms)
+Completed 200 OK in 2525ms (Views: 2505.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-05 20:18:50 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (287.9ms)
+Completed 200 OK in 346ms (Views: 334.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:20:20 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 75ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:20:57 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Unbalanced brackets.):
+    27: 
+    28:         %ul.navbar-nav.ml-auto
+    29:           #li.nav-item
+    30:             #a.nav-link{:href => '#{path_new_user_session'} Log In
+    31: 
+    32: 
+    33:     = yield
+  
+app/views/layouts/application.html.haml:30
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:22:08 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_END):
+    27: 
+    28:         %ul.navbar-nav.ml-auto
+    29:           #li.nav-item
+    30:             #a.nav-link{:href => '#{path_new_user_session}'} Log In
+    31: 
+    32: 
+    33:     = yield
+  
+app/views/layouts/application.html.haml:30:in `_app_views_layouts_application_html_haml___4412243855168421703_70206983724880'
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:22:59 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_END):
+    27: 
+    28:         %ul.navbar-nav.ml-auto
+    29:           #li.nav-item
+    30:             #a.nav-link{:href => '#{new_user_session_path}'} Log In
+    31: 
+    32: 
+    33:     = yield
+  
+app/views/layouts/application.html.haml:30:in `_app_views_layouts_application_html_haml___4412243855168421703_70207146955880'
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:24:59 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:34: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << ...
+         ^
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:34: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:34: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:37: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.haml:34: syntax error, unexpected ';', expecting ')'
+app/views/layouts/application.html.haml:34: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.haml:34: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.haml:37: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:25:25 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:34: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << ...
+         ^
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:34: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:34: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:37: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.haml:34: syntax error, unexpected ';', expecting ')'
+app/views/layouts/application.html.haml:34: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.haml:34: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.haml:37: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:26:05 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:28:25 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal element: classes and ids must have values.):
+    27: 
+    28:         %ul.navbar-nav.ml-auto
+    29:           #li.nav-item
+    30:             # =link_to "he", new_user_session_path
+    31:             #a.nav-link{:href => "#{new_user_session_path}"} Log In
+    32: 
+    33: 
+  
+app/views/layouts/application.html.haml:30
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:28:39 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_CMDARGEXPR_ENDEXPR_END):
+    28:         %ul.navbar-nav.ml-auto
+    29:           #li.nav-item
+    30:             
+    31:             #a.nav-link{:href => "#{new_user_session_path}"} Log In
+    32: 
+    33: 
+    34:     = yield
+  
+app/views/layouts/application.html.haml:31:in `_app_views_layouts_application_html_haml___4412243855168421703_70206984264940'
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:29:12 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_CMDARGEXPR_ENDEXPR_END):
+    28:         %ul.navbar-nav.ml-auto
+    29:           #li.nav-item
+    30:             
+    31:             #a.nav-link{:href => "#{new_user_session_path}"} Log In
+    32: 
+    33: 
+    34:     = yield
+  
+app/views/layouts/application.html.haml:31:in `_app_views_layouts_application_html_haml___4412243855168421703_70207155091260'
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:32:18 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_ARG):
+    28:         %ul.navbar-nav.ml-auto
+    29:           #li.nav-item
+    30:             
+    31:             #a.nav-link{:href => new_user_session_path} Log In
+    32: 
+    33: 
+    34:     = yield
+  
+app/views/layouts/application.html.haml:31:in `_app_views_layouts_application_html_haml___4412243855168421703_70206945176560'
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:34:00 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_CMDARGEXPR_ENDEXPR_END):
+    28:         %ul.navbar-nav.ml-auto
+    29:           #li.nav-item
+    30:             - hello = 'hi'
+    31:             #a.nav-link{:href => "#{hello}"} Log In
+    32: 
+    33: 
+    34:     = yield
+  
+app/views/layouts/application.html.haml:31:in `_app_views_layouts_application_html_haml___4412243855168421703_70207151578000'
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:34:15 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:35: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << ...
+         ^
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:35: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:35: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:38: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.haml:35: syntax error, unexpected ';', expecting ')'
+app/views/layouts/application.html.haml:35: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.haml:35: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.haml:38: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:34:25 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_END):
+    28:         %ul.navbar-nav.ml-auto
+    29:           #li.nav-item
+    30:             - hello = 'hi'
+    31:             #a.nav-link{:href => '#{hello}'} Log In
+    32: 
+    33: 
+    34:     = yield
+  
+app/views/layouts/application.html.haml:31:in `_app_views_layouts_application_html_haml___4412243855168421703_47033382154200'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-05 20:37:20 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:35: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << ...
+         ^
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:35: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:35: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:38: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.haml:35: syntax error, unexpected ';', expecting ')'
+app/views/layouts/application.html.haml:35: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.haml:35: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.haml:38: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:37:23 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:35: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << ...
+         ^
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:35: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:35: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:38: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.haml:35: syntax error, unexpected ';', expecting ')'
+app/views/layouts/application.html.haml:35: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.haml:35: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.haml:38: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-07-05 20:37:35 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_ENDEXPR_ENDEXPR_END):
+    28:         %ul.navbar-nav.ml-auto
+    29:           #li.nav-item
+    30:             - @hello = 'hi'
+    31:             #a.nav-link{:href => "#{@hello}"} Log In
+    32: 
+    33: 
+    34:     = yield
+  
+app/views/layouts/application.html.haml:31:in `_app_views_layouts_application_html_haml___4412243855168421703_70207011873380'
+Started GET "/" for 127.0.0.1 at 2018-07-09 08:41:46 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (42.2ms)
+Completed 500 Internal Server Error in 4370ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_ENDEXPR_ENDEXPR_END):
+    28:         %ul.navbar-nav.ml-auto
+    29:           #li.nav-item
+    30:             - @hello = 'hi'
+    31:             #a.nav-link{:href => "#{@hello}"} Log In
+    32: 
+    33: 
+    34:     = yield
+  
+app/views/layouts/application.html.haml:31:in `_app_views_layouts_application_html_haml___3919384407093083561_70331532918040'
+Started GET "/" for 127.0.0.1 at 2018-07-09 08:42:36 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_ENDEXPR_ENDEXPR_END):
+    28:         %ul.navbar-nav.ml-auto
+    29:           #li.nav-item
+    30:             - @hello = 'hi'
+    31:             #a.nav-link{:href => "#{@hello}"} Log In
+    32: 
+    33: 
+    34:     = yield
+  
+app/views/layouts/application.html.haml:31:in `_app_views_layouts_application_html_haml___3919384407093083561_70331550609880'
+Started GET "/" for 127.0.0.1 at 2018-07-09 08:44:11 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 08:44:50 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 08:45:14 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 08:46:46 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 08:47:57 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 38ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-09 08:48:02 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (276.2ms)
+Completed 200 OK in 490ms (Views: 383.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:06:02 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-07-09 09:06:10 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 121ms (Views: 119.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-07-09 09:06:14 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q8IBvkvEUX0UCGNb04LPkSqVtBoLPuOozgyKZvSXPIphiysx3rWcva7xBVi+A+ku7sGw/3+aCT17hGuJvULPVw==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 37ms (Views: 31.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:06:20 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:06:24 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HVBAYZfKwiOGmfHDbB8o7rhVmgtmZTw3GuZenwWQGcJGjegdw3ylHSkYQhJ7fBb2OyakczTYejgDq9K/HHbvmg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HVBAYZfKwiOGmfHDbB8o7rhVmgtmZTw3GuZenwWQGcJGjegdw3ylHSkYQhJ7fBb2OyakczTYejgDq9K/HHbvmg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:06:26 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aLY+/TC6ectany22y+xpwizyf3T01aDnS3M25B7rHCey1jmVS8uypkq3qYF3fXEgKXJ3sczKbd6Ni6ck7F2VdA==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aLY+/TC6ectany22y+xpwizyf3T01aDnS3M25B7rHCey1jmVS8uypkq3qYF3fXEgKXJ3sczKbd6Ni6ck7F2VdA==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:06:27 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4RHv3wTUIMNDPyKFRjToquYptt8ENZM7+dOLqYVtHck7cei3f6XrrlMXprL6pfBI46m+GjwqXgI/Kxppd9uUmg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4RHv3wTUIMNDPyKFRjToquYptt8ENZM7+dOLqYVtHck7cei3f6XrrlMXprL6pfBI46m+GjwqXgI/Kxppd9uUmg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-07-09 09:06:28 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:06:30 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 96ms (Views: 92.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:06:39 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:06:48 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:07:17 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:08:28 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:08:30 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:08:40 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"73ztvAYCGUqHytn13JiYMw+SixNolKlbR+fnKxxtqPQ1HOrUfXPSJ5fiXcJgCYDRChKD1lCLZGKBH3br7tshpw==", "user"=>{"email"=>"edwanhernandez@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "edwanhernandez@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 221ms (ActiveRecord: 0.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"73ztvAYCGUqHytn13JiYMw+SixNolKlbR+fnKxxtqPQ1HOrUfXPSJ5fiXcJgCYDRChKD1lCLZGKBH3br7tshpw==", "user"=>{"email"=>"edwanhernandez@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 124ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:08:45 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N+hOjfLRVzKJ/033upF3ZBlgt8iTyhmoPltfeC1Xd//tiEnliaCcX5nXycAGAG+GHOC/DavV1JH4o8643+H+rA==", "user"=>{"email"=>"edwanhernandez@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "edwanhernandez@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-07-09 16:08:46.068566"], ["sign_in_count", 2], ["updated_at", "2018-07-09 16:08:46.069031"], ["id", 1]]
+  [1m[35m (162.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 278ms (ActiveRecord: 163.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:08:46 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-07-09 09:08:49 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/users/sign_out" for 127.0.0.1 at 2018-07-09 09:09:10 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:09:13 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/layouts/application.html.haml:31: syntax error, unexpected ':', expecting ')'
+...oy_user_session_path, :method :delete
+...                              ^):
+  
+app/views/layouts/application.html.haml:31: syntax error, unexpected ':', expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:09:52 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-07-09 09:09:56 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XU1BxSMhnqMtywlGh45t8KGY8gtvaBDvFf3XwF5AZVmJx9eLG6wybFzZFj/+2pI8fYpvo1qNSRYKSC9ATldACA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:09:56 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:10:01 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:10:08 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oIKzqetItjowy0wFBu4tUvrRB+jfBg3emAaYfEKhK+nMNK0/CNkmEXheYIhxpc7UGD9RfiypA/n4ALys5y3ilQ==", "user"=>{"email"=>"edwanhernandez@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "edwanhernandez@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-07-09 16:10:08.367565"], ["last_sign_in_at", "2018-07-09 16:08:46.068566"], ["sign_in_count", 3], ["updated_at", "2018-07-09 16:10:08.367981"], ["id", 1]]
+  [1m[35m (118.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 235ms (ActiveRecord: 119.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:10:08 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:10:13 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-07-09 09:10:16 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"QpKrA6VHiuwvYNL6ZxBOn3A/GvlN3siLhSVb2iP03S81gaiIygnPdXfeekJiq6GgXzLFN4Uaxrl2k08sLvT8Lw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:10:16 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:10:18 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:10:34 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-09 09:10:44 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rgdTmyE5jUj7cSk/P/2CQmK1ss/fjHfglz3MzsA9p0GLpw/mML8k1i0dpEICwwpdx1mF8xBLUhRnb36SbnQu7w==", "user"=>{"email"=>"edwanhernandez@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "edwanhernandez@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-07-09 16:10:44.488884"], ["last_sign_in_at", "2018-07-09 16:10:08.367565"], ["sign_in_count", 4], ["updated_at", "2018-07-09 16:10:44.489423"], ["id", 1]]
+  [1m[35m (106.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 222ms (ActiveRecord: 107.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:10:44 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:10:47 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (2.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:10:47 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (3.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:10:48 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:10:48 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (4.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 66ms (Views: 63.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-09 09:10:48 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (51.0ms)
+Completed 200 OK in 109ms (Views: 76.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:10:48 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-09 09:10:52 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (21.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-07-09 09:11:02 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WvvWwLB10+V1BMfZUBcZURnRb6hCk5yFjdttyTKY5e63n78O9iw7+fW8c2Jj85n+TqsObyx1+jCP6JGW8qD/KQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-09 09:11:02 -0700
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
