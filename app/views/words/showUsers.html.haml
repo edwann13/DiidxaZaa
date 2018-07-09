@@ -1,0 +1,13 @@
+=link_to "Create a new User", new_user_words_path
+
+
+
+- @users.each do |user|
+	%p #{user.email} Admin: #{user.admin} Activated: #{user.activated}
+	= link_to "Go to user's page", get_user_words_path("#{user.id}")
+
+
+
+
+
+

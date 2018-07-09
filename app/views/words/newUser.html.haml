@@ -1,0 +1,8 @@
+%p this is the page to fill out the data of the new user
+
+= simple_form_for :user, :url => create_user_words_path, :method => :post do |f|
+	= f.input :email, label: 'Email', placeholder: 'Please Enter an Email'
+	= f.input :password, label: 'Password'
+	= f.input :activated, as: :radio_buttons, collection: [true, false]
+	= f.input :admin, as: :radio_buttons, collection: [true, false]
+	= f.button :submit
