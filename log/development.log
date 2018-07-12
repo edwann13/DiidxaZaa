@@ -27833,3 +27833,1568 @@ Processing by WordsController#index as HTML
 Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-11 15:00:35 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#index as HTML
+  Rendering words/index.html.haml within layouts/application
+  Rendered words/index.html.haml within layouts/application (37.6ms)
+Completed 200 OK in 435ms (Views: 427.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:01:14 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (90.2ms)
+Completed 200 OK in 121ms (Views: 115.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:06:34 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (30.4ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: kb%div.container.rounded
+    2:   - arr = @list.to_a
+    3:   - @list.each do |word|
+    4: 
+    5:     %div.row
+  
+app/views/words/allWords.html.haml:2
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:06:46 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: kb%div.container.rounded
+    2:   - arr = @list.to_a
+    3:   - @list.each do |word|
+    4: 
+    5:     %div.row
+  
+app/views/words/allWords.html.haml:2
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:06:57 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: kb%div.container.rounded
+    2:   - arr = @list.to_a
+    3:   - @list.each do |word|
+    4: 
+    5:     %div.row
+  
+app/views/words/allWords.html.haml:2
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:07:29 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (21.1ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:08:01 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (21.2ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:09:09 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (21.7ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:09:16 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (23.4ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:15:22 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 8ms
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/words/allWords.html.haml:22: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << ...
+         ^
+/home/developer/Desktop/DiidxaZaa/app/views/words/allWords.html.haml:44: syntax error, unexpected keyword_end, expecting ')'
+; end;; _hamlout.buffer << ("</div...
+  ^~~
+/home/developer/Desktop/DiidxaZaa/app/views/words/allWords.html.haml:44: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/home/developer/Desktop/DiidxaZaa/app/views/words/allWords.html.haml:44: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/home/developer/Desktop/DiidxaZaa/app/views/words/allWords.html.haml:47: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/words/allWords.html.haml:22: syntax error, unexpected ';', expecting ')'
+app/views/words/allWords.html.haml:44: syntax error, unexpected keyword_end, expecting ')'
+app/views/words/allWords.html.haml:44: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/words/allWords.html.haml:44: syntax error, unexpected keyword_end, expecting ')'
+app/views/words/allWords.html.haml:47: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:15:32 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (29.9ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/words/%23%7Bword.id%7D/edit" for 127.0.0.1 at 2018-07-11 15:15:48 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/words/%23%7Bword.id%7D/edit"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:15:51 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (21.9ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/%23%7Bword.id%7D/edit" for 127.0.0.1 at 2018-07-11 15:15:53 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/words/%23%7Bword.id%7D/edit"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:15:55 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (26.7ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:17:40 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/words/allWords.html.haml:22: syntax error, unexpected ';'
+; _hamlout.buffer << ((_hamlou...
+^):
+  
+app/views/words/allWords.html.haml:22: syntax error, unexpected ';'
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:17:51 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  Rendered words/allWords.html.haml within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/words/allWords.html.haml:22: syntax error, unexpected ';'
+; _hamlout.buffer << ((_hamlou...
+^):
+  
+app/views/words/allWords.html.haml:22: syntax error, unexpected ';'
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:18:44 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (20.5ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:18:55 -0700
+  
+AbstractController::ActionNotFound (The action 'edit' could not be found for WordsController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:19:00 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (22.2ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:19:18 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (25.5ms)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 15:21:12 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (24.9ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:21:14 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:26:00 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (244.5ms)
+Completed 200 OK in 280ms (Views: 279.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:27:05 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:28:45 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (16.8ms)
+Completed 200 OK in 56ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:28:56 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (17.5ms)
+Completed 200 OK in 54ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:29:26 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:29:41 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 45ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:33:07 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 73ms (Views: 30.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:33:21 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:7: syntax error, unexpected ')'
+)).to_s));).to_s);; _hamlout.b...
+^
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:7: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << ...
+         ^
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:11: syntax error, unexpected keyword_end, expecting ')'
+...t.buffer << ("\n".freeze);; end;; _hamlout.buffer << ((_haml...
+...                            ^~~
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:11: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:11: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:14: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/words/edit.html.haml:7: syntax error, unexpected ')'
+app/views/words/edit.html.haml:7: syntax error, unexpected ';', expecting ')'
+app/views/words/edit.html.haml:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/words/edit.html.haml:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/words/edit.html.haml:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/words/edit.html.haml:14: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:33:36 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:33:48 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:33:57 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 48ms (Views: 44.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:34:40 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:35:05 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 43ms (Views: 39.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:38:12 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:38:37 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:7: syntax error, unexpected ')', expecting '}'
+)).to_s));).to_s);; _hamlout.b...
+^
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:7: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << ...
+         ^
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:11: syntax error, unexpected keyword_end, expecting ')'
+...t.buffer << ("\n".freeze);; end;; _hamlout.buffer << ((_haml...
+...                            ^~~
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:11: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:11: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:14: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/words/edit.html.haml:7: syntax error, unexpected ')', expecting '}'
+app/views/words/edit.html.haml:7: syntax error, unexpected ';', expecting ')'
+app/views/words/edit.html.haml:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/words/edit.html.haml:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/words/edit.html.haml:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/words/edit.html.haml:14: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:38:44 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 47ms (Views: 43.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:39:21 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:9: syntax error, unexpected ')', expecting '}'
+)).to_s));).to_s);; _hamlout.b...
+^
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:9: syntax error, unexpected ';', expecting ')'
+)).to_s));).to_s);; _hamlout.buffer << ...
+         ^
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:11: syntax error, unexpected keyword_end, expecting ')'
+...t.buffer << ("\n".freeze);; end;; _hamlout.buffer << ((_haml...
+...                            ^~~
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:11: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                         ^~~~~~
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:11: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                            ^~~
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:14: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/words/edit.html.haml:9: syntax error, unexpected ')', expecting '}'
+app/views/words/edit.html.haml:9: syntax error, unexpected ';', expecting ')'
+app/views/words/edit.html.haml:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/words/edit.html.haml:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/words/edit.html.haml:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/words/edit.html.haml:14: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:39:27 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 42ms (Views: 38.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:39:55 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:40:40 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:41:21 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 52ms (Views: 48.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:41:41 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 41ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:43:14 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (10.3ms)
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:43:45 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:44:14 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:44:31 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:45:49 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 51ms (Views: 47.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:45:58 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (16.5ms)
+Completed 200 OK in 50ms (Views: 46.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:46:02 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:46:20 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:46:37 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:46:46 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 46ms (Views: 41.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:46:59 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:47:13 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 50ms (Views: 46.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:47:22 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:47:27 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:47:40 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 53ms (Views: 50.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:48:05 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:48:26 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 49ms (Views: 45.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:48:52 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 39ms (Views: 35.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:53:27 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:5: syntax error, unexpected ':', expecting keyword_end
+...emp =  simple_form_for :words :url => save_words_path, :meth...
+...                              ^
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:5: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+... => save_words_path, :method => :post do |f|
+...                             ^~
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/words/edit.html.haml:5: syntax error, unexpected ':', expecting keyword_end
+app/views/words/edit.html.haml:5: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/views/words/edit.html.haml:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:53:31 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:5: syntax error, unexpected ':', expecting keyword_end
+...emp =  simple_form_for :words :url => save_words_path, :meth...
+...                              ^
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:5: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+... => save_words_path, :method => :post do |f|
+...                             ^~
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/words/edit.html.haml:5: syntax error, unexpected ':', expecting keyword_end
+app/views/words/edit.html.haml:5: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/views/words/edit.html.haml:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:53:32 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:5: syntax error, unexpected ':', expecting keyword_end
+...emp =  simple_form_for :words :url => save_words_path, :meth...
+...                              ^
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:5: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+... => save_words_path, :method => :post do |f|
+...                             ^~
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/words/edit.html.haml:5: syntax error, unexpected ':', expecting keyword_end
+app/views/words/edit.html.haml:5: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/views/words/edit.html.haml:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:53:33 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:5: syntax error, unexpected ':', expecting keyword_end
+...emp =  simple_form_for :words :url => save_words_path, :meth...
+...                              ^
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:5: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+... => save_words_path, :method => :post do |f|
+...                             ^~
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/words/edit.html.haml:5: syntax error, unexpected ':', expecting keyword_end
+app/views/words/edit.html.haml:5: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/views/words/edit.html.haml:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:53:34 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.9ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.9ms)
+
+
+  
+SyntaxError (/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:5: syntax error, unexpected ':', expecting keyword_end
+...emp =  simple_form_for :words :url => save_words_path, :meth...
+...                              ^
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:5: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+... => save_words_path, :method => :post do |f|
+...                             ^~
+/home/developer/Desktop/DiidxaZaa/app/views/words/edit.html.haml:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/words/edit.html.haml:5: syntax error, unexpected ':', expecting keyword_end
+app/views/words/edit.html.haml:5: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+app/views/words/edit.html.haml:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:53:39 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 51ms (Views: 47.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 15:56:03 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 30ms (Views: 21.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 15:56:06 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WBTThwg5ovMjXAsdSixPSKFbN1cQDrAbG7Uz5yfL2cBzkP/Ujwm8lDP5ZVINo8apB0WAZxrESnH5nJecH7MHHA==", "words"=>{"spanish"=>"spanish", "word"=>"brain", "zapoteco"=>"abati', gabati'", "category"=>"Anatomy"}, "commit"=>"Save Words"}
+No template found for WordsController#save, rendering head :no_content
+Completed 204 No Content in 33ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 16:00:21 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:00:23 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RCEqlUbFTtVwUJubmMctR5LggwLr8fxaG5YNpFNuUflvpQbGwfVQsmD19dTfSKSmNP40MuE7BjD5v6nfaxaPJQ==", "words"=>{"spanish"=>"spanish", "word"=>"brain", "zapoteco"=>"abati', gabati'", "category"=>"Anatomy"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/save" for 127.0.0.1 at 2018-07-11 16:02:18 -0700
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"save"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_CMDARGEXPR_BEG):
+    15:     %div.row
+    16:       %div.col-md-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    17:         / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+    18:         %a.text{:href => "#{carousel_set_words_path(word.word)}" }
+    19:           / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+    20:           %p.hello1 #{word.word}
+    21:       %div.col-md-5.hello2.top-buffer.roundCenter
+  
+app/views/words/show.html.haml:18:in `block in _app_views_words_show_html_haml___3373591626246479595_70264793141080'
+app/views/words/show.html.haml:14:in `_app_views_words_show_html_haml___3373591626246479595_70264793141080'
+Started GET "/words/save" for 127.0.0.1 at 2018-07-11 16:02:41 -0700
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"save"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_CMDARGEXPR_BEG):
+    15:     %div.row
+    16:       %div.col-md-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    17:         / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+    18:         %a.text{:href => "#{carousel_set_words_path(word.word)}" }
+    19:           / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+    20:           %p.hello1 #{word.word}
+    21:       %div.col-md-5.hello2.top-buffer.roundCenter
+  
+app/views/words/show.html.haml:18:in `block in _app_views_words_show_html_haml___3373591626246479595_70264795731900'
+app/views/words/show.html.haml:14:in `_app_views_words_show_html_haml___3373591626246479595_70264795731900'
+Started GET "/words/save" for 127.0.0.1 at 2018-07-11 16:02:47 -0700
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"save"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_CMDARGEXPR_BEG):
+    15:     %div.row
+    16:       %div.col-md-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    17:         / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+    18:         %a.text{:href => "#{carousel_set_words_path(word.word)}" }
+    19:           / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+    20:           %p.hello1 #{word.word}
+    21:       %div.col-md-5.hello2.top-buffer.roundCenter
+  
+app/views/words/show.html.haml:18:in `block in _app_views_words_show_html_haml___3373591626246479595_70264800362240'
+app/views/words/show.html.haml:14:in `_app_views_words_show_html_haml___3373591626246479595_70264800362240'
+Started GET "/words/save" for 127.0.0.1 at 2018-07-11 16:03:22 -0700
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"save"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (17.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_CMDARGEXPR_BEG):
+    15:     %div.row
+    16:       %div.col-md-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    17:         / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+    18:         %a.text{:href => "#{carousel_set_words_path(word.word)}" }
+    19:           / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+    20:           %p.hello1 #{word.word}
+    21:       %div.col-md-5.hello2.top-buffer.roundCenter
+  
+app/views/words/show.html.haml:18:in `block in _app_views_words_show_html_haml___3373591626246479595_47443475614060'
+app/views/words/show.html.haml:14:in `_app_views_words_show_html_haml___3373591626246479595_47443475614060'
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:03:27 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RCEqlUbFTtVwUJubmMctR5LggwLr8fxaG5YNpFNuUflvpQbGwfVQsmD19dTfSKSmNP40MuE7BjD5v6nfaxaPJQ==", "words"=>{"spanish"=>"spanish", "word"=>"brain", "zapoteco"=>"abati', gabati'", "category"=>"Anatomy"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 16:03:37 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 30ms (Views: 23.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:03:40 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rgok1U7u/7wY6I0zlJiupx8X2UPZA2kjx9upRoQt7ICFjgiGyd7h2whN43zTFydGuQluc9PJk0kl8g09vFUyXA==", "words"=>{"spanish"=>"spanish", "word"=>"brain", "zapoteco"=>"abati', gabati'", "category"=>"Anatomy"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/save" for 127.0.0.1 at 2018-07-11 16:04:04 -0700
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"save"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_CMDARGEXPR_BEG):
+    15:     %div.row
+    16:       %div.col-md-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    17:         / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+    18:         %a.text{:href => "#{carousel_set_words_path(word.word)}" }
+    19:           / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+    20:           %p.hello1 #{word.word}
+    21:       %div.col-md-5.hello2.top-buffer.roundCenter
+  
+app/views/words/show.html.haml:18:in `block in _app_views_words_show_html_haml___3373591626246479595_70264792748320'
+app/views/words/show.html.haml:14:in `_app_views_words_show_html_haml___3373591626246479595_70264792748320'
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:04:08 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rgok1U7u/7wY6I0zlJiupx8X2UPZA2kjx9upRoQt7ICFjgiGyd7h2whN43zTFydGuQluc9PJk0kl8g09vFUyXA==", "words"=>{"spanish"=>"spanish", "word"=>"brain", "zapoteco"=>"abati', gabati'", "category"=>"Anatomy"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:04:23 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rgok1U7u/7wY6I0zlJiupx8X2UPZA2kjx9upRoQt7ICFjgiGyd7h2whN43zTFydGuQluc9PJk0kl8g09vFUyXA==", "words"=>{"spanish"=>"spanish", "word"=>"brain", "zapoteco"=>"abati', gabati'", "category"=>"Anatomy"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 16:18:02 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 30ms (Views: 23.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:18:12 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ul3w38bTfC6FOhLVO29JpTL9bhnp97JZ1LQ11IU2DqJ52dyMQeNiSZWffJp84MBElOPZKeM9SDM2nZGvvU7Qfg==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `spanish' for #<ActionController::Parameters:0x00007fcf98f9aac8>):
+  
+app/controllers/words_controller.rb:62:in `save'
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:18:54 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ul3w38bTfC6FOhLVO29JpTL9bhnp97JZ1LQ11IU2DqJ52dyMQeNiSZWffJp84MBElOPZKeM9SDM2nZGvvU7Qfg==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+Completed 500 Internal Server Error in 98346ms
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `save'
+app/controllers/words_controller.rb:63:in `save'
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 16:21:39 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (23.4ms)
+Completed 200 OK in 211ms (Views: 198.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:21:40 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tua//sVX8Ts6QQzeKdOMYJBejUeVxeOknjGlvosPi4VlYpOtQmfvXCrkYpFuXAWBNkA6d58PGc58GAHFs3dVWQ==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `word=' for #<ActionController::Parameters:0x00007fd9b16d2e18>):
+  
+app/controllers/words_controller.rb:68:in `save'
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:22:40 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tua//sVX8Ts6QQzeKdOMYJBejUeVxeOknjGlvosPi4VlYpOtQmfvXCrkYpFuXAWBNkA6d58PGc58GAHFs3dVWQ==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 19.9ms)
+
+
+Started GET "/words/save" for 127.0.0.1 at 2018-07-11 16:23:24 -0700
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"save"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_CMDARGEXPR_BEG):
+    15:     %div.row
+    16:       %div.col-md-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    17:         / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+    18:         %a.text{:href => "#{carousel_set_words_path(word.word)}" }
+    19:           / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+    20:           %p.hello1 #{word.word}
+    21:       %div.col-md-5.hello2.top-buffer.roundCenter
+  
+app/views/words/show.html.haml:18:in `block in _app_views_words_show_html_haml__1101210107294936258_70286478526900'
+app/views/words/show.html.haml:14:in `_app_views_words_show_html_haml__1101210107294936258_70286478526900'
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 16:23:28 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:23:30 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XgslPuh0W5pNPoqYwynHR9/GOkjhK+H0X8mLTiKPnmJ1jwltb0RF/V2b5NeEpk6mediNeOvhG5694C81GvdAvg==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:23:40 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XgslPuh0W5pNPoqYwynHR9/GOkjhK+H0X8mLTiKPnmJ1jwltb0RF/V2b5NeEpk6mediNeOvhG5694C81GvdAvg==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 16:24:32 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 29ms (Views: 22.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:24:35 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ST2h1OHBQsPJdoxU2pKPSiaxRge4Xah30WjZsycDmDxiuY2HZvFcpNnT4hudHQargK/xN7KXUh0zQX3IH3tG4A==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/save" for 127.0.0.1 at 2018-07-11 16:24:52 -0700
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"save"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (12.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_CMDARGEXPR_BEG):
+    15:     %div.row
+    16:       %div.col-md-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    17:         / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+    18:         %a.text{:href => "#{carousel_set_words_path(word.word)}" }
+    19:           / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+    20:           %p.hello1 #{word.word}
+    21:       %div.col-md-5.hello2.top-buffer.roundCenter
+  
+app/views/words/show.html.haml:18:in `block in _app_views_words_show_html_haml__1101210107294936258_70286334588060'
+app/views/words/show.html.haml:14:in `_app_views_words_show_html_haml__1101210107294936258_70286334588060'
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:24:59 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ST2h1OHBQsPJdoxU2pKPSiaxRge4Xah30WjZsycDmDxiuY2HZvFcpNnT4hudHQargK/xN7KXUh0zQX3IH3tG4A==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/save" for 127.0.0.1 at 2018-07-11 16:25:57 -0700
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"save"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_CMDARGEXPR_BEG):
+    15:     %div.row
+    16:       %div.col-md-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    17:         / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+    18:         %a.text{:href => "#{carousel_set_words_path(word.word)}" }
+    19:           / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+    20:           %p.hello1 #{word.word}
+    21:       %div.col-md-5.hello2.top-buffer.roundCenter
+  
+app/views/words/show.html.haml:18:in `block in _app_views_words_show_html_haml__1101210107294936258_70286476695500'
+app/views/words/show.html.haml:14:in `_app_views_words_show_html_haml__1101210107294936258_70286476695500'
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:26:08 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ST2h1OHBQsPJdoxU2pKPSiaxRge4Xah30WjZsycDmDxiuY2HZvFcpNnT4hudHQargK/xN7KXUh0zQX3IH3tG4A==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 16:27:45 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 37ms (Views: 29.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:27:54 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jXPvLd+5e9wak7ye6cz+LCrzAFTLQICX3mPzWp0kyP6m98N+WIlluwo20tGuQ3fNjO23ZMGKev08SlchpVwWIg==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `word=' for nil:NilClass):
+  
+app/controllers/words_controller.rb:73:in `save'
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 16:29:56 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 30ms (Views: 23.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:29:57 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9KujYNKLR387SZJFdMghE4fuwgm0UbdG2VZbsFm1dVjfL48zVbtZGCvs/AozR6jyIfB1Ob6bTSw7f//LYc2rhA==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `word=' for nil:NilClass):
+  
+app/controllers/words_controller.rb:73:in `save'
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:31:04 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9KujYNKLR387SZJFdMghE4fuwgm0UbdG2VZbsFm1dVjfL48zVbtZGCvs/AozR6jyIfB1Ob6bTSw7f//LYc2rhA==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `word=' for nil:NilClass):
+  
+app/controllers/words_controller.rb:74:in `save'
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 16:31:06 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 34ms (Views: 26.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:31:07 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GfcSxAXqIfEK9kEHts63ygiZcPxSF0DivvVU5TDlenMycz6Xgto/lhpTL0jxQT4rrofHzFjduohc3PCeCJ2krw==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `word=' for nil:NilClass):
+  
+app/controllers/words_controller.rb:74:in `save'
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:31:22 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GfcSxAXqIfEK9kEHts63ygiZcPxSF0DivvVU5TDlenMycz6Xgto/lhpTL0jxQT4rrofHzFjduohc3PCeCJ2krw==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 20.9ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:34:48 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GfcSxAXqIfEK9kEHts63ygiZcPxSF0DivvVU5TDlenMycz6Xgto/lhpTL0jxQT4rrofHzFjduohc3PCeCJ2krw==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 4ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: %p this is the saving page
+    2: %p '#{@params[:words][:word]}'
+  
+app/views/words/save.html.haml:2:in `_app_views_words_save_html_haml___3585411543218244439_70286486307660'
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:35:10 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GfcSxAXqIfEK9kEHts63ygiZcPxSF0DivvVU5TDlenMycz6Xgto/lhpTL0jxQT4rrofHzFjduohc3PCeCJ2krw==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: %p this is the saving page
+    2: / %p '#{@params[:words][:word]}'
+  
+app/views/words/save.html.haml:2:in `_app_views_words_save_html_haml___3585411543218244439_47076019685820'
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:35:23 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GfcSxAXqIfEK9kEHts63ygiZcPxSF0DivvVU5TDlenMycz6Xgto/lhpTL0jxQT4rrofHzFjduohc3PCeCJ2krw==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 49ms (Views: 48.0ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:37:15 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GfcSxAXqIfEK9kEHts63ygiZcPxSF0DivvVU5TDlenMycz6Xgto/lhpTL0jxQT4rrofHzFjduohc3PCeCJ2krw==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 21.1ms)
+
+
+Started GET "/words/save" for 127.0.0.1 at 2018-07-11 16:38:08 -0700
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"save"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_CMDARGEXPR_BEG):
+    15:     %div.row
+    16:       %div.col-md-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    17:         / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+    18:         %a.text{:href => "#{carousel_set_words_path(word.word)}" }
+    19:           / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+    20:           %p.hello1 #{word.word}
+    21:       %div.col-md-5.hello2.top-buffer.roundCenter
+  
+app/views/words/show.html.haml:18:in `block in _app_views_words_show_html_haml__1101210107294936258_70286486330860'
+app/views/words/show.html.haml:14:in `_app_views_words_show_html_haml__1101210107294936258_70286486330860'
+Started GET "/words/allWords" for 127.0.0.1 at 2018-07-11 16:38:12 -0700
+Processing by WordsController#allWords as HTML
+  Rendering words/allWords.html.haml within layouts/application
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/allWords.html.haml within layouts/application (24.7ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:38:17 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GfcSxAXqIfEK9kEHts63ygiZcPxSF0DivvVU5TDlenMycz6Xgto/lhpTL0jxQT4rrofHzFjduohc3PCeCJ2krw==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:38:32 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GfcSxAXqIfEK9kEHts63ygiZcPxSF0DivvVU5TDlenMycz6Xgto/lhpTL0jxQT4rrofHzFjduohc3PCeCJ2krw==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:39:40 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GfcSxAXqIfEK9kEHts63ygiZcPxSF0DivvVU5TDlenMycz6Xgto/lhpTL0jxQT4rrofHzFjduohc3PCeCJ2krw==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/save" for 127.0.0.1 at 2018-07-11 16:39:48 -0700
+Processing by WordsController#show as HTML
+  Parameters: {"id"=>"save"}
+  Rendering words/show.html.haml within layouts/application
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  Rendered words/show.html.haml within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::EXPR_BEGEXPR_BEGEXPR_BEGEXPR_CMDARGEXPR_BEG):
+    15:     %div.row
+    16:       %div.col-md-3.hello1.top-buffer.roundLeft{:id => "hello"}
+    17:         / =link_to "Delete Image", action: "carousel", data: { data: arr} 
+    18:         %a.text{:href => "#{carousel_set_words_path(word.word)}" }
+    19:           / =link_to "Profile", carousel_set_words_path(@list.to_a), method: :post
+    20:           %p.hello1 #{word.word}
+    21:       %div.col-md-5.hello2.top-buffer.roundCenter
+  
+app/views/words/show.html.haml:18:in `block in _app_views_words_show_html_haml__1101210107294936258_70286483301260'
+app/views/words/show.html.haml:14:in `_app_views_words_show_html_haml__1101210107294936258_70286483301260'
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 16:40:03 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.3ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:40:05 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bIDuDnfHj28BHbldqqAqsPeC/4C5DLS39bFNdG8CG/xHBMJd8PeRCBG41xLtL6NRUZxIsLPGTt0XmOkPV3rFIA==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 16:40:38 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.2ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:40:40 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"66Wb3LU9R3N9y9QyCQ93CvMFduPtvDS/x4fTnXkV/rvAIbePMg1ZFG1uun1OgP7rVRvB0+d2ztUlrnfmQW0gZw==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:42:29 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"66Wb3LU9R3N9y9QyCQ93CvMFduPtvDS/x4fTnXkV/rvAIbePMg1ZFG1uun1OgP7rVRvB0+d2ztUlrnfmQW0gZw==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:42:48 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"66Wb3LU9R3N9y9QyCQ93CvMFduPtvDS/x4fTnXkV/rvAIbePMg1ZFG1uun1OgP7rVRvB0+d2ztUlrnfmQW0gZw==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:44:01 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/words/save"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started POST "/words/save" for 127.0.0.1 at 2018-07-11 16:44:31 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/words/save"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/home/developer/.rbenv/versions/2.5.1/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/words/1/edit" for 127.0.0.1 at 2018-07-11 16:44:35 -0700
+Processing by WordsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWord Load (0.1ms)[0m  [1m[34mSELECT  "words".* FROM "words" WHERE "words"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering words/edit.html.haml within layouts/application
+  Rendered words/edit.html.haml within layouts/application (25.3ms)
+Completed 200 OK in 197ms (Views: 188.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/words/save/1" for 127.0.0.1 at 2018-07-11 16:44:36 -0700
+Processing by WordsController#save as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jKSD6fAE3hBBHcmrD4CwTgTlyZ5abhn27cuMToSEAUenIK+6dzTAd1G4p+RIDzmvovt+rlCk45wP4ig1vPzfmw==", "words"=>{"spanish"=>"spanish", "word"=>"hello", "zapoteco"=>"hello", "category"=>"hello"}, "commit"=>"Save Words", "id"=>"1"}
+  Rendering words/save.html.haml within layouts/application
+  Rendered words/save.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+

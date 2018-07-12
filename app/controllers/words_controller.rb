@@ -49,4 +49,24 @@ class WordsController < ApplicationController
 		password = user[:password]
 		User.create!({:email => email, :admin => admin, :activated => activated, :password => password})
 	end
+
+
+	def edit
+		id = params[:id]
+		@word = Word.find(id)
+	end
+
+	def save
+		#enter code here to save the word
+
+		# @params = params[:words][:word]
+		@arrParam = params[:words]
+		@english = @arrParam[:word]
+		@params = params
+		puts @english.class
+
+
+		# @word.save
+
+	end
 end
