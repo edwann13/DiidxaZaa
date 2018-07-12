@@ -18,6 +18,9 @@
 
       %div.col-12.col-sm-4.top-buffer.roundRight.sampleImage
         = image_tag "sample.png", 'class' => "imageDef"
+        - @id = word.id
+        = link_to "Edit", edit_word_path(@id)
+
 
     / creating a new row So I can add the arrow or more button to show the modal
 

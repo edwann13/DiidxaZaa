@@ -24,6 +24,11 @@ Rails.application.routes.draw do
       # create a new user using the post method with the given data
       get 'newUser' => 'words#newUser', as: 'new_user'
       post 'createUser' => 'words#createUser', as: 'create_user'
+
+      get 'editWord/:id' => 'words#updateWord', as: 'edit'
+
+      post 'save/:id' => 'words#save', as: 'save'
+
     end
   end
 
