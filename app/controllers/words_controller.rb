@@ -57,16 +57,22 @@ class WordsController < ApplicationController
 	end
 
 	def save
-		#enter code here to save the word
-
-		# @params = params[:words][:word]
-		@arrParam = params[:words]
-		@english = @arrParam[:word]
+		# get all the parameters that were passed
 		@params = params
-		puts @english.class
 
+		# get the id of the current word that we are looking at
+		@id = params[:id]
+		@id = @id.to_i
+		@word = Word.find(@id)
 
-		# @word.save
+		wordParams = params[:words]
+		english = wordParams[:word]
+		spanish = wordParams[:spanish]
+		zapoteco = wordParams[:zapoteco]
 
+		@word.word = english
+		@word.spanish = spanish
+		@word.zapoteco = zapoteco
+		@word.save		
 	end
 end
