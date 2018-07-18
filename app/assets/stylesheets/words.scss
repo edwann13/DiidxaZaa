@@ -66,6 +66,13 @@ $primary-color: #333;
 		max-height: 100%;
 		max-width: 100%;
 	}
+
+	div.modWidth {
+		max-width: 15rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 10px;
+	}
 }
 
 // small screens
@@ -108,6 +115,13 @@ $primary-color: #333;
 	.roundRight {
 		border-radius: 0px 15px 15px 0px;
 	}
+
+	div.modWidth {
+		max-width: 35rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 10px;
+	}
 }	
 
 
@@ -147,6 +161,13 @@ $primary-color: #333;
 
 	.roundRight {
 		border-radius: 0px 15px 15px 0px;
+	}
+
+	div.modWidth {
+		max-width: 45rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 10px;
 	}
 
 }
@@ -190,6 +211,17 @@ $primary-color: #333;
 		border-radius: 0px 15px 15px 0px;
 	}
 
+	div.row {
+		margin-bottom: 50px;
+	}
+	
+	div.modWidth {
+		max-width: 55rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 10px
+	}
+
 }
 
 // extra large screens
@@ -231,7 +263,25 @@ $primary-color: #333;
 		border-radius: 0px 15px 15px 0px;
 	}
 
+	div.row {
+		margin-bottom: 100px;
+	}
 
+	.navbar-expand-lg .navbar-collapse {
+		max-width: 60rem;
+		margin-right: auto;
+	}
+
+	.navbar-brand {
+		margin-left: auto;
+	}
+
+	div.modWidth {
+		max-width: 55rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 10px
+	}
 
 
 }

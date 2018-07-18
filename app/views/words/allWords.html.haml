@@ -21,26 +21,16 @@
         - @id = word.id
         = link_to "Edit", edit_word_path(@id)
 
-
-    / creating a new row So I can add the arrow or more button to show the modal
-
-    / %div.row.testingRow
-    /   %div.col-12
-    /     %p this is going to be part of the whole word component
-
-    %div.row
-      %div.col-6
-
-        / this is the logic for creating the modal component
-        #exampleModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
-          .modal-dialog{:role => "document"}
-            .modal-content
-              .modal-header
-                %h5#exampleModalLabel.modal-title Modal title
-                %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
-                  %span{"aria-hidden" => "true"} ×
-              .modal-body
-                = image_tag "sample.png", 'class' => "imageModal"
-              .modal-footer
-                %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
+    / this is the logic for creating the modal component
+    #exampleModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-header
+            %h5#exampleModalLabel.modal-title Modal title
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %span{"aria-hidden" => "true"} ×
+          .modal-body
+            = image_tag "sample.png", 'class' => "imageModal"
+          .modal-footer
+            %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
 
