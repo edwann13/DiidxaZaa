@@ -1,9 +1,10 @@
-%p this is part of the get User
-%p #{@user.email}
-%p #{@user.admin}
-%p #{@user.activated}
+%div.modWidth
+	%p this is part of the get User
+	%p #{@user.email}
+	%p #{@user.admin}
+	%p #{@user.activated}
 
-= simple_form_for :user do |f|
-	= f.input :activated, as: :radio_buttons, collection: [true, false]
-	= f.input :admin, as: :radio_buttons, collection: [true, false]
-	= f.button :submit
+	= simple_form_for :user do |f|
+		= f.input :activated, as: :radio_buttons, collection: [true, false]
+		= f.input :admin, as: :radio_buttons, collection: [true, false]
+		= f.button :submit
