@@ -35,20 +35,21 @@
 // });
 
 
-function wordReplacement() {
-	
-}
+
+
+// function toggle() {
+// 	let button = document.getElementById("mobileBtn");
+// 	button.classList.toggle("topNavbarVisible");
+// }
+
+// var button = document.getElementById("mobileBtn")
+
+// button.addEventListener("click", toggle())
 
 
 
 
-
-
-
-
-
-
-
+// document.getElementById("mobileBtn").addEventListener("click", function () {alert("hello") });
 
 
 

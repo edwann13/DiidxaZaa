@@ -10,35 +10,18 @@
     = favicon_link_tag 'favicon.ico'
 
   %body
-    %nav.navbar.navbar-expand-lg.navbar-light.bg-light1
-      =link_to "DiidzaZaa", root_path, :class => "navbar-brand"
-      %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNav", "data-toggle" => "collapse", :type => "button"}
-        %span.navbar-toggler-icon
-      #navbarNav.collapse.navbar-collapse
-        %ul.navbar-nav
-          %li.nav-item.active
-            %a.nav-link{:href => "#"}
-              Home
-              %span.sr-only (current)
-          %li.nav-item
-            =link_to "Vocabulario", allWords_words_path, :class => 'nav-link'
-          %li.nav-item
-            %a.nav-link{:href => "#"} Gramatica
-          %li.nav-item
-            %a.nav-link{:href => "#"} Tracductor
-          %li.nav-item
-            %a.nav-link.disabled{:href => "#"} Videos
+    %div.container-fluid.topNavbar
+      %div.mobileCont
+        %a#mobileBtn{onclick: "toggleNavMenu(event)"} link
+      %div#containerToggle.navCont
+        =link_to("Diidxazaa", root_path, class: "linkBrand linkNav")
+        =link_to("Home", root_path, class: "linkNav")
+        =link_to("Vocab", allWords_words_path, class: "linkNav")
+        =link_to("Gramatica", root_path, class: "linkNav")
+        =link_to("Video", root_path, class: "linkNav")
+        =link_to("Login", root_path, class: "linkNav")
 
-        %ul.navbar-nav.ml-auto
-          -if user_signed_in?
-            %li.nav-item
-              =link_to "See Users", showUsers_words_path, :class => "nav-link"
-            %li.nav-item
-              =link_to "Log Out", destroy_user_session_path, method: :delete, :class => 'nav-link'
-          -else 
-            %li.nav-item
-              =link_to "Login", new_user_session_path
-            
+
 
 
     = yield

@@ -19,3 +19,11 @@
 //= require_tree .
 //= require words
 
+function toggleNavMenu() {
+	// let obj = this;
+	let id = "containerToggle";
+	document.getElementById(id).classList.toggle("topNavbarVisible");
+	console.log("clicked")
+
+
+}

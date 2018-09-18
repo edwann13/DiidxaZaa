@@ -9,8 +9,8 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3.rc2'
 # Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
-gem 'pg'
+gem 'sqlite3'
+# gem 'pg'
 
 gem 'rake', '~> 12.1'
 
@@ -59,6 +59,7 @@ group :development, :test do
 end
 
 group :development do
+
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'

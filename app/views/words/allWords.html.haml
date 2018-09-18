@@ -4,10 +4,10 @@
 
     %div.row
       %div.col-6.col-sm-3.hello1.top-buffer.roundLeft{:id => "hello"}
-        %a.text
-          %p.hello1 #{word.word}
+        %a.text.leftVocabText #{word.word}
+
       %div.col-6.col-sm-5.hello2.top-buffer.roundCenter
-        %p.hello2 #{word.showWord(word, @lang)}
+        %a.rightVocabText #{word.showWord(word, @lang)}
       
       %div.col-12.modalRound
         = image_tag "down_arrow.png", "class" => "imageArrow", 'role' => 'button', 'data-target' => '#exampleModal', 'data-toggle' => 'modal', :type => 'button'

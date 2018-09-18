@@ -2,403 +2,767 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import 'variables';
+@import 'Signup';
 
-
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
-
-
-// .row div {
-// 	height: 45vh;
+// .editWordTitle {
+// 	text-align: center;
+// 	color: #78909C;
+// 	padding-top: 20px;
 // }
 
-.testingModal {
-	background-color: red;
-}
-
-.testingRow {
-	background-color: green;
-}
-
-
-
-// css for the general application
-
-// extra small devices less than or equal to 575px
-@media screen and (max-width : 576px) and (min-width : 1px) {
-	body {
-		background-color: yellow;
-	}
-
-	div.row	 {
-		padding: 5px;
-		height: 25vh;
-	}
-
-	.sampleImage {
-		display: none;
-	}
-
-	.roundCenter {
-		border-radius: 0px 15px 0px 0px;
-	}
-
-	.roundLeft {
-		border-radius: 15px 0px 0px 0px;
-	}
-
-
-	.modalRound {
-	border-radius: 0px 0px 15px 15px;
-	background-color: white;
-	// background-color: red;
-	}
-
-	.imageArrow {
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	}
-
-	.imageModal {
-		width: auto;
-		height: auto;
-		max-height: 100%;
-		max-width: 100%;
-	}
-
-	div.modWidth {
-		max-width: 15rem;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 10px;
-	}
-}
-
-// small screens
-@media  screen and (max-width : 767px) and (min-width : 577px) {
-	body {
-		background-color: red;
-	}
-
-	.modalRound {
-		display: none;
-	}
-
-	.row div {
-		height: 20vh;
-	}
-
-	.imageDef{
-
-		width: auto;
-		height:auto;
-		max-width: 100%;
-		max-height: 92%;
-		vertical-align: middle;
-		padding-top: 9px;
-	}
-	.top-buffer {
-		margin-top: 15px;
-		padding:  18px, 18px;
-
-	}
-
-	.roundCenter {
-		border-radius: 0px 0px 0px 0px;
-	}
-
-	.roundLeft {
-		border-radius: 15px 0px 0px 15px;
-	}
-
-	.roundRight {
-		border-radius: 0px 15px 15px 0px;
-	}
-
-	div.modWidth {
-		max-width: 35rem;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 10px;
-	}
-}	
-
-
-
-// medium screens
-@media screen and (min-width : 777px) and (max-width : 991px) {
-	body {
-		background-color: purple;
-	}
-	.modalRound {
-		display: none;
-	}
-
-	div.row {
-		height: 45vh;
-		padding-top: 15px;
-		padding-bottom: 15px; 
-	}
-
-	.imageDef{
-
-		width: auto;
-		height:auto;
-		max-width: 100%;
-		max-height: 92%;
-		vertical-align: middle;
-		padding-top: 9px;
-	}
-
-	.roundCenter {
-		border-radius: 0px 0px 0px 0px;
-	}
-
-	.roundLeft {
-		border-radius: 15px 0px 0px 15px;
-	}
-
-	.roundRight {
-		border-radius: 0px 15px 15px 0px;
-	}
-
-	div.modWidth {
-		max-width: 45rem;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 10px;
-	}
-
-}
-
-// large screens
-@media screen and (max-width : 1199px) and (min-width : 992px) {
-	body {
-		background-color: orange;
-	}
-
-	.modalRound {
-		display: none;
-	}
-
-
-	div.row {
-		height: 50vh;
-		padding-top: 15px;
-		padding-bottom: 15px; 
-	}
-
-	.imageDef{
-
-		width: auto;
-		height:auto;
-		max-width: 100%;
-		max-height: 92%;
-		vertical-align: middle;
-		padding-top: 9px;
-	}
-
-	.roundCenter {
-		border-radius: 0px 0px 0px 0px;
-	}
-
-	.roundLeft {
-		border-radius: 15px 0px 0px 15px;
-	}
-
-	.roundRight {
-		border-radius: 0px 15px 15px 0px;
-	}
-
-	div.row {
-		margin-bottom: 50px;
-	}
-	
-	div.modWidth {
-		max-width: 55rem;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 10px
-	}
-
-}
-
-// extra large screens
-
-@media screen and (min-width : 1200px){
-	body {
-		background-color: green
-	}
-
-	.modalRound {
-		display: none;
-	}
-	
-	div.row {
-		height: 53vh;
-		padding-top: 15px;
-		padding-bottom: 15px; 
-	}
-
-	.imageDef{
-
-		width: auto;
-		height:auto;
-		max-width: 100%;
-		max-height: 92%;
-		vertical-align: middle;
-		padding-top: 9px;
-	}
-
-	.roundCenter {
-		border-radius: 0px 0px 0px 0px;
-	}
-
-	.roundLeft {
-		border-radius: 15px 0px 0px 15px;
-	}
-
-	.roundRight {
-		border-radius: 0px 15px 15px 0px;
-	}
-
-	div.row {
-		margin-bottom: 100px;
-	}
-
-	.navbar-expand-lg .navbar-collapse {
-		max-width: 60rem;
-		margin-right: auto;
-	}
-
-	.navbar-brand {
-		margin-left: auto;
-	}
-
-	div.modWidth {
-		max-width: 55rem;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 10px
-	}
-
-
-}
-// css for the general application
-
-
-.seeUsers {
-	padding-right: 10px;
-}
-.hello1 {
-	background-color: white;
-	// padding: 50px;
-    font-family: "Lucida Grande","Lucida Sans Unicode",Arial,sans-serif;
-
-}
-
-.hello2 {
-	background-color: white;
-	// padding: 50px;
-    font-family: "Lucida Grande","Lucida Sans Unicode",Arial,sans-serif;
-    align: left;
-
-}
-
-.sampleImage {
-
-	align: left;
-	background-color: white;
-	
-	// visibility: hidden;
-}
-
-
-body {
-	background-color: rgb(236, 240, 241);
-	// padding-top:70px;
-}
-
-// @media only screen and (max-width: 773px) {
+// .editContainer {
+// 	width: 100%;
+// 	height: 475px;	
+// 	margin-top: 10px;
+
+// }
+
+// .editForms {
+// 	margin: 0 auto;
+// 	background-color: #FFFFFF;
+// 	width: 45%;
+// 	height: 100%;
+// 	border-radius: 18px;
+// 	border-style: solid;
+
+// 	border-width: thin; 
+// 	border-color: #BABABA;
+// }
+
+// .signUp {
+// 	text-align: center;
+// }
+
+// // text input
+// div {
+// 	&.LogIn, &.password{
+// 		input {
+// 			border: none;
+// 			border-bottom: 1px solid #32AEDE;
+// 			border-radius: 0px;
+
+// 		}
+
+// 		input:focus {
+// 			border-bottom: 3px solid #32AEDE;
+
+// 		}
+// 	}
+// }
+
+// div {
+// 	&.signUp{
+// 		a {
+
+// 			display: inline-block;
+// 			color: $textColor;
+// 		}
+
+// 		a:hover {
+// 			color: $textColorHoverLink;
+// 		}
+
+// 	}
+// }
+
+// label {
+// 	&.rememberButton {
+// 		color: $textColor;
+// 	}
+// }
+
+// label {
+// 	&.editLabel {
+// 		width: 19%;
+// 		display: inline-block;
+// 		font-family: Arial, Helvetica, sans-serif;
+// 		font-size: 28px;
+// 		color: #78909C;
+// 	}
+// }
+
+// // label.editLabel{
+// // 	width: 19%;	
+// // 	display: inline-block;
+// // 	font-family: Arial, Helvetica, sans-serif;
+// // 	font-size: 28px;
+// // 	color: #78909C;
+// // }
+
+// .formEdit {
+// 	background-color: red;
+
+// }
+
+// .formEdit2 {
+// 	background-color: blue;
+// }
+
+// .form-control {
+// 	width: 60%;
+// 	display: inline-block;	
+// }	
+
+// .form-group:first-of-type {
+// 	padding-top: 82px;
+// 	// padding-top: 45px;
+// }
+
+// .form-group:not(:first-of-type) {
+// 	padding-top: 15px;
+// }
+
+// .form-group {
+// 	text-align: center;
+// }
+
+// input[type=text] {
+// 	border: none;
+// 	border-bottom: 1px solid #32AEDE;
+// 	border-radius: 0px;
+// 	color: #78909C;
+
+// }
+// input[type=text]:focus {
+// 	color: #78909C;
+// 	border-bottom: 3px solid #32AEDE;
+
+// }
+
+// .editSubmit {
+// 	border-color: #78909C;
+// 	background-color: #EFF0F2;
+// 	margin: 0 auto;
+// 	display: block;
+// 	font-family: Arial, Helvetica, sans-serif;
+// 	font-size: 24px;
+// 	color: #78909C;
+// }
+		
+
+// form.editWord{
+// 	margin: 0 auto;
+// 	background-color: #FFFFFF;
+// 	width: 45%;
+// 	height: 100%;
+// 	border-style: solid;
+// 	border-width: thin;
+// 	border-color: #BABABA;
+// 	border-radius: 18px;
+// }
+
+
+
+
+// .cont {
+// 	width: 100%;
+// }
+
+// .topNavbar {
+// 	height: 70px;
+// 	background-color: #32AEDE;
+// 	// padding-left: 431px;
+// 	position: relative;
+// 	// overflow: hidden;
+// 	z-index: 1;
+// 	box-shadow: -7px 4px 8px #b3b3b3;
+
+
+
+
+// }
+
+// .navCont {
+// 	// margin-left: auto;
+// 	// margin-right: auto;
+// 	// margin: auto;
+// 	// display: block;
+// 	width: 70%;
+// 	margin: 0 auto;
+// 	// background-color: red;		
+
+// }
+
+// a:not([href]):not([tabindex]) {
+// 	color: white;
+// 	opacity: .95;
+// }
+
+
+
+// a.linkBrand{
+// 		font-size: 35px;
+// 		font-family: Arial, Helvetica, sans-serif;
+// 		color: #FFFFFF;
+// 		padding-top: 9px;
+// 		display: block;
+// 		padding-right: 56px;
+// 		font-weight: bold;
+// 		float: left;
+// 		text-decoration: none;
+// }
+
+// a.linkNav {
+// 	display: inline-block;
+// 	padding-top: 13.5px;
+// 	padding-bottom: 30px;
+// 	padding-right: 20px;
+// 	font-family: Arial, Helvetica, sans-serif;
+// 	font-size: 22pt;
+// 	color: white;
+// 	text-decoration: none;
+// }
+
+// a.linkNav:hover {
+// 	color: black;
+// }
+
+
+
+// $font-stack:    Helvetica, sans-serif;
+// $primary-color: #333;
+
+
+// // .row div {
+// // 	height: 45vh;
+// // }
+
+// .testingModal {
+// 	background-color: red;
+// }
+
+// .testingRow {
+// 	background-color: green;
+// }
+
+
+
+// // css for the general application
+
+// // extra small devices less than or equal to 575px
+// @media screen and (max-width : 576px) and (min-width : 1px) {
 // 	body {
+// 		background-color: yellow;
+// 	}
+
+// 	div.row	 {
+// 		padding: 5px;
+// 		height: 25vh;
+// 	}
+
+// 	.sampleImage {
+// 		display: none;
+// 	}
+
+// 	.roundCenter {
+// 		border-radius: 0px 15px 0px 0px;
+// 	}
+
+// 	.roundLeft {
+// 		border-radius: 15px 0px 0px 0px;
+// 	}
+
+
+// 	.modalRound {
+// 	border-radius: 0px 0px 15px 15px;
+// 	background-color: white;
+// 	// background-color: red;
+// 	}
+
+// 	.imageArrow {
+// 		margin-left: auto;
+// 		margin-right: auto;
+// 		display: block;
+// 	}
+
+// 	.imageModal {
+// 		width: auto;
+// 		height: auto;
+// 		max-height: 100%;
+// 		max-width: 100%;
+// 	}
+
+// 	div.modWidth {
+// 		max-width: 15rem;
+// 		margin-left: auto;
+// 		margin-right: auto;
+// 		padding-top: 10px;
 // 		background-color: red;
 // 	}
 // }
 
-// @media only screen and (max-width: 773px) {
-// 	.hello1 {
-// 		background-color: yellow;
+// // small screens
+// @media  screen and (max-width : 767px) and (min-width : 577px) {
+// 	.rounded {
+// 		padding-top: 70px;
 // 	}
-// 	.hello2 {
-// 		background-color: pink;
+// 	body {
+// 		background-color: red;
 // 	}
-// 	.sampleImage {
+
+// 	.modalRound {
+// 		display: none;
+// 	}
+
+// 	.row div {
+// 		height: 20vh;
+// 	}
+
+// 	.imageDef{
+
+// 		width: auto;
+// 		height:auto;
+// 		max-width: 100%;
+// 		max-height: 92%;
+// 		vertical-align: middle;
+// 		padding-top: 9px;
+// 	}
+// 	.top-buffer {
+// 		margin-top: 15px;
+// 		padding:  18px, 18px;
+
+// 	}
+
+// 	.roundCenter {
+// 		border-radius: 0px 0px 0px 0px;
+// 	}
+
+// 	.roundLeft {
+// 		border-radius: 15px 0px 0px 15px;
+// 	}
+
+// 	.roundRight {
+// 		border-radius: 0px 15px 15px 0px;
+// 	}
+
+// 	div.modWidth {
+// 		max-width: 35rem;
+// 		margin-left: auto;
+// 		margin-right: auto;
+// 		padding-top: 10px;
+// 	}
+// }	
+
+
+
+// // medium screens
+// @media screen and (min-width : 777px) and (max-width : 991px) {
+// 	.rounded {
+// 		padding-top: 70px;
+// 	}
+// 	body {
+// 		background-color: purple;
+// 	}
+// 	.modalRound {
+// 		display: none;
+// 	}
+
+// 	div.row {
+// 		height: 45vh;
+// 		padding-top: 15px;
+// 		padding-bottom: 15px; 
+// 	}
+
+// 	.imageDef{
+
+// 		width: auto;
+// 		height:auto;
+// 		max-width: 100%;
+// 		max-height: 92%;
+// 		vertical-align: middle;
+// 		padding-top: 9px;
+// 	}
+
+// 	.roundCenter {
+// 		border-radius: 0px 0px 0px 0px;
+// 	}
+
+// 	.roundLeft {
+// 		border-radius: 15px 0px 0px 15px;
+// 	}
+
+// 	.roundRight {
+// 		border-radius: 0px 15px 15px 0px;
+// 	}
+
+// 	div.modWidth {
+// 		max-width: 45rem;
+// 		margin-left: auto;
+// 		margin-right: auto;
+// 		padding-top: 10px;
+// 	}
+
+// }
+
+// // large screens
+// @media screen and (max-width : 1199px) and (min-width : 992px) {
+// 	.rounded {
+// 		padding-top: 70px;
+// 	}
+// 	body {
 // 		background-color: orange;
 // 	}
-// }
 
-.bg-light1 {
-    background-color: rgb(110, 211, 207);
-}
-
-.hello {
-  
-  
-  padding: 20px;
-}
+// 	.modalRound {
+// 		display: none;
+// 	}
 
 
+// 	div.row {
+// 		height: 50vh;
+// 		padding-top: 15px;
+// 		padding-bottom: 15px; 
+// 	}
 
+// 	.imageDef{
 
+// 		width: auto;
+// 		height:auto;
+// 		max-width: 100%;
+// 		max-height: 92%;
+// 		vertical-align: middle;
+// 		padding-top: 9px;
+// 	}
 
-a {
-	color:black;
-}
+// 	.roundCenter {
+// 		border-radius: 0px 0px 0px 0px;
+// 	}
 
+// 	.roundLeft {
+// 		border-radius: 15px 0px 0px 15px;
+// 	}
 
-// .top-buffer { 
-// 	margin-top: 30px;
-// 	padding: 25px 50px;
+// 	.roundRight {
+// 		border-radius: 0px 15px 15px 0px;
+// 	}
+
+// 	div.row {
+// 		margin-bottom: 50px;
+// 	}
 	
+// 	div.modWidth {
+// 		max-width: 55rem;
+// 		margin-left: auto;
+// 		margin-right: auto;
+// 		padding-top: 10px;
+// 		background-color:red;
+// 	}
+
 // }
 
-// .roundLeft {
-// 	border-radius: 15px 0px 0px 15px;
-// }
+// // extra large screens
 
-// .roundCenter {
-// 	border-radius: 0px, 0px, 0px, 0px;
-// }
-// .roundRight {
-// 	border-radius: 0px 15px 15px 0px;
-// }
+// @media (min-width : 1200px){
+// 	.rounded {
+// 		padding-top: 70px;
+// 	}
+// 	body {
+// 		background-color: green
+// 	}
 
-
-// ul.nav a:hover { color: red; }
-
-
-
-
-// .zapo {
+// 	.modalRound {
+// 		display: none;
+// 	}
 	
+// 	div.row {
+// 		height: 350px;
+// 		padding-top: 15px;
+// 		padding-bottom: 15px; 
+// 	}
+
+// 	.imageDef{
+
+// 		width: auto;
+// 		height:auto;
+// 		max-width: 100%;
+// 		max-height: 92%;
+// 		vertical-align: middle;
+// 		padding-top: 9px;
+// 	}
+
+// 	.roundCenter {
+// 		border-radius: 0px 0px 0px 0px;
+// 		box-shadow: 14px 10px 8px #888888;
+// 	}
+
+// 	.roundLeft {
+// 		border-radius: 15px 0px 0px 15px;
+// 		box-shadow: 17px 10px 8px 0px #888888;
+// 	}
+
+// 	.roundRight {
+// 		border-radius: 0px 15px 15px 0px;
+// 		box-shadow: 10px 10px 8px #888888;
+// 	}
+
+// 	div.row {
+// 		margin-bottom: 100px;
+// 	}
+
+// 	.navbar-expand-lg .navbar-collapse {
+// 		max-width: 60rem;
+// 		margin-right: auto;
+// 	}
+
+// 	.navbar-brand {
+// 		margin-left: auto;
+// 	}
+
+// 	div.modWidth {
+// 		border-radius: 18px;
+// 		max-width: 55rem;
+// 		margin-left: auto;
+// 		margin-right: auto;
+// 		margin-top: 25px;
+// 		padding-top: 10px;
+// 		background-color: #FFFFFF;
+// 		color: black;
+// 		border-color: red;
+// 		height: 518px;
+// 	}
+
+// 	h2.logInTitle {
+// 		font-size: 56px;
+// 		margin-left: 59px;
+// 		margin-top: 44px;
+// 		font-family: Arial, Helvetica, sans-serif;
+// 		color: #78909C;
+// 	}
+
+// 	.submitLogin {
+// 		color: #78909C;
+// 		background-color: #d9d9d9;
+// 		text-align: center;
+// 		width: 30%;
+// 		margin: 0 auto;
+// 		border-radius: 18px;
+// 		font-size: 24px;
+// 		height: 66px;
+
+// 	}
+
+// 	// input.submitLogin {
+// 	// 	background-color: #78909C;
+// 	// }
+
+// 	.remember {
+
+// 		margin-left: 105px;
+// 		width: 50%;
+// 	}
+
+// 	.labelLogIn,{
+// 		font-size: 24px;
+// 		font-family: Arial, Helvetica, sans-serif;
+// 		color: #78909C;
+// 		width: 12%;
+// 		text-align: right;
+
+// 	}
+
+// 	.passwordField {
+// 		color: $textColor;
+// 		font-size: 24px;
+// 		font-family: Arial, Helvetica, sans-serif;
+// 		// text-align: right;
+
+// 	}
+
+// 	.leftVocabText, .rightVocabText{
+// 		color: $textColor !important;
+// 		position: relative;
+// 		font-family: $vocabFont;
+// 		top: 50%;
+// 		transform: translateY(-50%);
+// 		text-align: center;
+// 		margin: 0 auto;
+// 		display: block;
+// 		width: 100%;
+
+// 	}
+
+// 	// .input
+
+
+// }
+// // css for the general application
+
+
+// .seeUsers {
+// 	padding-right: 10px;
+// }
+
+
+
+
+
+// .hello1 {
+// 	background-color: white;
+// 	// padding: 50px;
+// 	color: #78909C;
+//     font-family: "Lucida Grande","Lucida Sans Unicode",Arial,sans-serif;
+    
+
+// }
+
+// .hello2 {
+// 	background-color: white;
+// 	// padding: 50px;
+//     font-family: "Lucida Grande","Lucida Sans Unicode",Arial,sans-serif;
+//     align: left;
+//     color: #78909C;
+
+// }
+
+// .sampleImage {
+
 // 	align: left;
+// 	background-color: white;
+	
+// 	// visibility: hidden;
+// }
+
+
+// body {
+// 	background-color: #EFF0F2;
+// 	// padding-top:70px;
 // }
 
 
 
+// .bg-light1 {
+//     background-color: rgb(110, 211, 207);
+// }
 
-// About page
+// .hello {
+  
+  
+//   padding: 20px;
+// }
 
-.aboutImage {
-	background-image: url('https://images.pexels.com/photos/1081223/pexels-photo-1081223.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
-	background-size: cover;
-	// background-attachment: fixed;
-	width: 100%;
-	height:450px;
-	// vertical-align: middle;
-	background-position: 50% 50%;
+
+// a {
+// 	color:black;
+// }
+
+
+// // About page
+
+// .aboutImage {
+// 	background-image: url('https://images.pexels.com/photos/1081223/pexels-photo-1081223.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+// 	background-size: cover;
+// 	// background-attachment: fixed;
+// 	width: 100%;
+// 	height:450px;
+// 	// vertical-align: middle;
+// 	background-position: 50% 50%;
+// }
+
+
+
+// extra small device
+@media (min-width: 250px) {
+	.modWidth {
+		padding-top:50px;
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	.mobileCont {
+		width: 100%;
+		background-color: $navBgColor;
+		float: left;
+		height: 45px;
+		// position: ;
+		z-index: 100;
+
+	}
+
+	#mobileBtn {
+		float: right;
+		display:block;
+		background-color: white;
+		height: 100%;
+		padding-right: 40px;
+
+	}
+	.topNavbar {
+		background-color: $navBgColor;
+		padding-right: 0px;
+		padding-left: 0px;
+		position:absolute;
+		z-index: 100;
+	}
+
+	.navCont {
+		// display: none;
+		// height: 0px;
+		// max-height: 0px;
+		// overflow:hidden;
+		-webkit-transition: max-height 4s;
+	}
+
+	.navCont>a {
+		display: none;
+		padding: 10px;
+		color: white;
+		font-size: 1.25em;
+		text-decoration: none;
+		border-bottom: 1px solid white;
+		padding-left: 40px;
+		background-color: $navBgColor;
+
+	}
+	.topNavbarVisible > a {
+		display: block;
+		// position: absolute;
+		// z-index: 100;
+		height: 100%;
+		// max-height: 500px;
+	}
 }
+
+// small device (landscape phones)
+@media (min-width: 576px) {
+
+
+}
+
+// medium screen (tablets)
+@media (min-width: 768px) {
+
+	.navCont {
+		height: 100%;
+		width: 100%;
+		// display: inline-block;
+		max-height: none;
+		// float: left;
+
+	}
+	.navCont > a {
+		display: inline-block;
+		border:none;
+	}
+}
+
+// large screen (desktop)
+@media (min-width: 992px) {
+
+
+}
+
+// extra large screen
+@media (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
 
 
 

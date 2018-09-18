@@ -1,0 +1,77 @@
+
+
+div {
+	&.signupContainer {
+		background-color: $backgroundColorReg;
+		overflow: hidden;
+		width: 60%;
+		height: 60%;
+		margin: 0 auto;
+		padding: 30px;
+		margin-top: 25px;
+		border-radius: 18px;
+		margin-bottom: 20px;
+
+	}
+}
+
+h2 {
+	&.signUpTitle {
+		color: $textColor;
+		font-size: $regTitleSize;
+		font-family: $titleFont;
+	}
+}
+
+
+	
+div {
+	 #user_email, &.passwordInput, &.user_email{
+		color: $textColor !important;
+		font-size: $regFontSize;
+		border: none;
+		// border-bottom: 1px solid $borderColor;
+		border-radius: 0px;
+		// width: 50%;
+	}
+	&.user_email {
+		color: $textColor !important;
+		font-size: $regFontSize;
+		border: none;
+
+	}
+	#user_email {
+		border-bottom: 1px solid $borderColor;
+	}
+}
+
+
+.submitButton {
+	input {
+		color: $textColor;
+		display: block;
+		margin: 0 auto;
+		font-size: 30px;
+	}
+}
+
+.loginSignUp {
+	a {
+		color: $textColor;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+}
+
+.help-block {
+	font-size: 13px;
+}
+
+
+
+
+
+
+

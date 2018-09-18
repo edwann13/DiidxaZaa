@@ -1,14 +1,15 @@
-%div.modWidth
-	%p this is the edit page
 
+%div.editContainer
+	%h1.editWordTitle Edit Word
 
+	= simple_form_for :words,:id => 'this', :html=> {class: "editWord"}, :url => save_words_path(:id => @word.id), :method => :post do |f|
+		= f.input :spanish, :required => false, input_html:{value: @word.spanish}, label_html:{class: "editLabel"}, wrapper_html: { class: 'formGroupEdit' }
+		
+		= f.input :word, :required => false, input_html:{value: @word.word}, label: 'English', label_html:{class: "editLabel"}
+		= f.input :zapoteco, :required => false, input_html:{value: @word.zapoteco}, label_html:{class: "editLabel"}
+		= f.input :category, :required => false, input_html:{value: @word.category}, placeholder: @word.category, label_html:{class: "editLabel"}
+		= f.button :submit, :class => "editSubmit"
 
-	= simple_form_for :words,:id => 'this', :url => save_words_path(:id => @word.id), :method => :post do |f|
-		= f.input :spanish, input_html:{value: @word.spanish}
-		= f.input :word, input_html:{value: @word.word}, label: 'English'
-		= f.input :zapoteco, input_html:{value: @word.zapoteco}
-		= f.input :category, input_html:{value: @word.category}, placeholder: @word.category
-		= f.button :submit
 
 
 

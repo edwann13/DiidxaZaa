@@ -1,11 +1,12 @@
 
 %div.modWidth
-    %h2 Log In
+    %h2.logInTitle Log In
     = simple_form_for(resource, as: resource_name, url:session_path(resource_name)) do |f|
         .form-inputs 
-            = f.input :email, required: false, autofocus: true
-            = f.input :password, required: false
-            = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
-        .form-actions
-            = f.button :submit, "Log in"
-    = render 'devise/shared/links'
+            = f.input :email, required: false, autofocus: true, wrapper_html:{class: "LogIn"}, label_html:{ class: "labelLogIn"}
+            = f.input :password, required: false, wrapper_html:{class: "passwordField"}
+            = f.input :remember_me, :label_html => { :class => 'rememberButton' }, as: :boolean if devise_mapping.rememberable?
+        .form-actions.submitLogin
+            = f.button :submit, "Log in", class: "submitLogin"
+    %div.signUp
+        = render 'devise/shared/links'
